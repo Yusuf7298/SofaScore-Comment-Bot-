@@ -1,0 +1,34 @@
+{
+  "appium": {
+    "server_url": "http://127.0.0.1:4723",
+    "platformName": "Android",
+    "automationName": "UiAutomator2",
+    "appPackage": "com.sofascore.results",
+    "appActivity": "com.sofascore.results.ui.main.MainActivity",
+    "noReset": true,
+    "fullReset": false
+  },
+  "execution_mode": "sequential",
+  "bot": {
+    "dry_run": true,
+    "polling_interval_seconds": 15,
+    "max_comments": 10,
+    "cooldown_between_comments_seconds": 120
+  },
+  "anti_ban": {
+    "min_delay_sec": 3,
+    "max_delay_sec": 12,
+    "skip_chance_percent": 15,
+    "account_switch_delay_seconds": 30
+  },
+  "comments": [
+    "What a game so far! Let's see who breaks the deadlock.",
+    "Unbelievable scenes here!",
+    "They really need a tactical change right now.",
+    "Great defending on that last play.",
+    "This match is getting tense!",
+    "I expected more goals by now.",
+    "The referee is letting them play, good football.",
+    "They are dominating possession but need to finish."
+  ]
+}
