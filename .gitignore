@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+logs/
+validation_runner.log
+.gemini/
+.DS_Store
+*.tmp
+temp/
+node_modules/
+package-lock.json
