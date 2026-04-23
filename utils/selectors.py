@@ -43,3 +43,17 @@ POST_COMMENT_BUTTON = [
     {"by": AppiumBy.ANDROID_UIAUTOMATOR, "value": 'new UiSelector().descriptionMatches("(?i)send")', "timeout": 0.5},
     {"by": AppiumBy.XPATH, "value": "//*[@content-desc='Send' or @text='Send']", "timeout": 0.5}
 ]
+
+MATCH_LIST_ITEM = [
+    {"by": AppiumBy.ID, "value": "com.sofascore.results:id/match_cell", "timeout": 1.0},
+    {"by": AppiumBy.XPATH, "value": "//android.view.ViewGroup[contains(@resource-id, 'match_cell')]", "timeout": 0.5}
+]
+
+LEAGUE_HEADER = [
+    {"by": AppiumBy.ID, "value": "com.sofascore.results:id/header_text", "timeout": 1.0},
+    {"by": AppiumBy.XPATH, "value": "//*[contains(@resource-id, 'tournament') or contains(@resource-id, 'league')]", "timeout": 0.5}
+]
+
+SPORT_CATEGORY_ICON = [
+    {"by": AppiumBy.XPATH, "value": "//*[@text='{sport}' or contains(@content-desc, '{sport}') or contains(@text, '{sport}')]", "timeout": 1.0}
+]

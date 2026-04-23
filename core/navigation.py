@@ -133,6 +133,54 @@ class Navigator:
         logger.warning(f"Element not found, skipping type. ({memory_key})")
         return False
 
+    def select_eligible_match(self, filters):
+        """Locates and enters a professional match based on sport and league exclusion criteria."""
+        allowed_sports = filters.get("allowed_sports", [])
+        exclude_keywords = [k.lower() for k in filters.get("exclude_keywords", [])]
+        
+        from utils.selectors import SPORT_CATEGORY_ICON, MATCH_LIST_ITEM
+        
+        self.driver.implicitly_wait(0)
+        
+        for sport in allowed_sports:
+            logger.info(f"Checking for eligible {sport} matches...")
+            
+            sport_selector = [{"by": s["by"], "value": s["value"].format(sport=sport)} for s in SPORT_CATEGORY_ICON]
+            if not self.safe_click(sport_selector, global_timeout=2.0):
+                continue
+                
+            random_delay(1, 2)
+            
+            self.driver.implicitly_wait(0)
+            matches = self.driver.find_elements(MATCH_LIST_ITEM[0]["by"], MATCH_LIST_ITEM[0]["value"])
+            
+            if not matches:
+                logger.debug(f"No active {sport} matches found on screen.")
+                continue
+                
+            for match in matches:
+                try:
+                    match_info = match.get_attribute("content-desc") or ""
+                    match_text = match.text or ""
+                    
+                    is_amateur = any(word in match_info.lower() or word in match_text.lower() for word in exclude_keywords)
+                    
+                    if not is_amateur:
+                        logger.success(f"Eligible professional match found: {match_text or 'Match'}")
+                        match.click()
+                        random_delay(2, 4)
+                        self.driver.implicitly_wait(10)
+                        return True
+                    else:
+                        logger.warning(f"Skipping amateur/youth match: {match_text or 'Match'}")
+                except Exception as e:
+                    logger.debug(f"Error evaluating match cell: {e}")
+                    continue
+        
+        self.driver.implicitly_wait(10)
+        logger.error("No eligible professional matches found after scanning all categories.")
+        return False
+
     def navigate_to_discussion_tab(self):
         logger.trace("Navigating to Discussion Tab...")
         success = self.safe_click(DISCUSSION_TAB_SELECTOR, global_timeout=4.0)

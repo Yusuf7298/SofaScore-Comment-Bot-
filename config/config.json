@@ -9,11 +9,17 @@
     "fullReset": false
   },
   "execution_mode": "sequential",
+  "match_filters": {
+    "allowed_sports": ["Football", "Tennis", "Basketball", "Baseball", "Cricket"],
+    "exclude_keywords": ["Amateur", "U19", "U18", "Youth"],
+    "min_league_rank": 1
+  },
   "bot": {
     "dry_run": true,
     "polling_interval_seconds": 15,
     "max_comments": 10,
-    "cooldown_between_comments_seconds": 120
+    "cooldown_between_comments_seconds": 120,
+    "auto_match_selection": true
   },
   "anti_ban": {
     "min_delay_sec": 3,

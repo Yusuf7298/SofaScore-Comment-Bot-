@@ -49,11 +49,12 @@ A production-ready, multi-account automation architecture designed to perform hi
 
 ### 1. `config/config.json`
 The central configuration hub for the automation loops.
+- `"match_filters"`: Configures which matches the bot enters.
+  - `"allowed_sports"`: ["Football", "Tennis", "Basketball", "Baseball", "Cricket"].
+  - `"exclude_keywords"`: List of strings (e.g., "Amateur", "U19") used to block non-professional matches.
 - `"bot"` parameters dictate execution logic:
+  - `"auto_match_selection": true` (Enables the bot to automatically find and enter professional matches from the main screen).
   - `"dry_run": true` (Will simulate interactions but explicitly skip pressing the Send button. Perfect for debugging/client demos).
-  - `"polling_interval_seconds"`: Default delay while waiting for UI changes.
-- `"anti_ban"` metrics control the bot "humanness." Adjust the randomized reading delays or switch probabilities.
-- `"comments"`: Array string list of all random comments to pick from dynamically.
 
 ### 2. `accounts/accounts.json`
 Define your emulator profiles and sequential proxy rules.

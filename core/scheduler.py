@@ -77,8 +77,17 @@ class Scheduler:
         
         random_delay(anti_ban.get("min_delay_sec", 5), anti_ban.get("max_delay_sec", 15))
         
+        # 0. AUTOMATED MATCH SELECTION
+        if bot_settings.get("auto_match_selection", False):
+            match_filters = self.config.get("match_filters", {})
+            if not navigator.select_eligible_match(match_filters):
+                logger.error(f"[{username}] Could not find an eligible match. Ending cycle.")
+                return
+        
         logger.info(f"[{username}] Navigating to discussion tab...")
-        navigator.navigate_to_discussion_tab()
+        if not navigator.navigate_to_discussion_tab():
+            logger.error(f"[{username}] Failed to open discussion panel. Match might not have comments enabled.")
+            return
         
         actions.simulate_human_behavior()
         
