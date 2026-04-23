@@ -4,7 +4,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.helpers import logger, random_delay
 from utils.selectors import DISCUSSION_TAB_SELECTOR
-
 class Navigator:
     def __init__(self, driver):
         self.driver = driver
@@ -141,39 +140,43 @@ class Navigator:
         from utils.selectors import SPORT_CATEGORY_ICON, MATCH_LIST_ITEM
         
         self.driver.implicitly_wait(0)
+        size = self.driver.get_window_size()
         
         for sport in allowed_sports:
-            logger.info(f"Checking for eligible {sport} matches...")
+            # Fallback for Football -> Soccer
+            sport_names = [sport]
+            if sport == "Football": sport_names.append("Soccer")
             
-            sport_selector = [{"by": s["by"], "value": s["value"].format(sport=sport)} for s in SPORT_CATEGORY_ICON]
+            success = False
+            for name in sport_names:
+                logger.info(f"Checking for eligible {name} matches...")
+                sport_selector = [{"by": s["by"], "value": s["value"].format(sport=name)} for s in SPORT_CATEGORY_ICON]
+                success = self.safe_click(sport_selector, global_timeout=2.0)
+                if success: break
             
-            # 1. Attempt to find and click the sport icon
-            success = self.safe_click(sport_selector, global_timeout=2.0)
-            
-            # 1b. If not found, attempt a horizontal swipe of the category bar
+            # If not found, attempt dynamic swipes
             if not success:
-                logger.debug(f"{sport} icon not visible. Attempting horizontal swipe...")
-                try:
-                    size = self.driver.get_window_size()
-                    # Swipe from right to left at the top of the screen where categories are
-                    self.driver.swipe(size['width']*0.8, 200, size['width']*0.2, 200, 500)
+                for swipe_attempt in range(3):
+                    logger.info(f"{sport} not visible. Swiping category bar (Attempt {swipe_attempt+1})...")
+                    # Swipe the top 20% of the screen
+                    self.driver.swipe(size['width']*0.9, size['height']*0.15, size['width']*0.1, size['height']*0.15, 600)
                     time.sleep(1)
-                    success = self.safe_click(sport_selector, global_timeout=2.0)
-                except Exception as e:
-                    logger.debug(f"Swipe failed: {e}")
+                    for name in sport_names:
+                        sport_selector = [{"by": s["by"], "value": s["value"].format(sport=name)} for s in SPORT_CATEGORY_ICON]
+                        success = self.safe_click(sport_selector, global_timeout=1.5)
+                        if success: break
+                    if success: break
             
             if not success:
-                logger.warning(f"Could not locate {sport} category icon. Skipping.")
+                logger.warning(f"Could not locate {sport} category icon after swiping.")
                 continue
                 
-            # 2. Wait for list to refresh
-            random_delay(2, 3)
+            random_delay(2, 4)
             
-            self.driver.implicitly_wait(0)
             matches = self.driver.find_elements(MATCH_LIST_ITEM[0]["by"], MATCH_LIST_ITEM[0]["value"])
+            logger.info(f"Found {len(matches)} total matches in {sport} list. Evaluating eligibility...")
             
             if not matches:
-                logger.debug(f"No active matches visible for {sport}.")
                 continue
                 
             for match in matches:
@@ -188,15 +191,14 @@ class Navigator:
                             break
                     
                     if not found_keyword:
-                        logger.success(f"Eligible professional match found: {match_text[:30] or 'Match'}")
+                        logger.success(f"ENTERING PROFESSIONAL MATCH: {match_text[:40]}")
                         match.click()
-                        random_delay(2, 4)
+                        random_delay(3, 5)
                         self.driver.implicitly_wait(10)
                         return True
                     else:
-                        logger.warning(f"Filtered out match: contains '{found_keyword}'")
+                        logger.warning(f"Skipping: contains '{found_keyword}'")
                 except Exception as e:
-                    logger.debug(f"Error evaluating match cell: {e}")
                     continue
         
         self.driver.implicitly_wait(10)
