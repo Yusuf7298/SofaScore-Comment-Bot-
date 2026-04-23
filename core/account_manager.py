@@ -29,7 +29,6 @@ class AccountManager:
         self.load_accounts()
 
     def _check_for_updates(self):
-        """Checks if the accounts file has been updated and reloads if necessary."""
         if not os.path.exists(self.accounts_file):
             return
             
@@ -96,7 +95,6 @@ class AccountManager:
         return active
 
     def rotate_accounts(self):
-        """Pulls the next active account sequentially using round-robin execution"""
         self._check_for_updates()
         active = self.get_active_accounts()
         if not active:

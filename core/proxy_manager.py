@@ -4,16 +4,10 @@ from utils.helpers import logger
 import os
 
 class ProxyManager:
-    """
-    Manages setting and clearing proxies via ADB.
-    Note: Android requires ADB global HTTP proxy for non-rooted devices without third-party apps.
-    This may not work for SOCKS5 or proxies requiring username/password authentication natively.
-    """
     def __init__(self, adb_path=None):
         self.adb_path = adb_path or os.environ.get("LOCALAPPDATA", "") + r"\Android\Sdk\platform-tools\adb.exe"
 
     def set_proxy(self, udid, proxy_string):
-        """Sets the global HTTP proxy for the specific device."""
         if not proxy_string:
             logger.info("No proxy provided, skipping proxy setup.")
             return True
@@ -36,7 +30,6 @@ class ProxyManager:
             return False
 
     def clear_proxy(self, udid):
-        """Clears the global HTTP proxy for the specific device."""
         logger.info(f"Clearing proxy for device {udid}...")
         try:
             cmd = f'"{self.adb_path}" -s {udid} shell settings put global http_proxy :0'

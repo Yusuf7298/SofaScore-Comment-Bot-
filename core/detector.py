@@ -8,7 +8,6 @@ class MatchEventDetector:
         self.last_time = None
 
     def capture_current_state(self):
-        """Scrapes the current match score and time from the UI."""
         from selenium.common.exceptions import StaleElementReferenceException
         score_elem = self.navigator.safe_find(SCORE_TEXT, timeout=3, retries=1)
         time_elem = self.navigator.safe_find(MATCH_TIME_TEXT, timeout=3, retries=1)
@@ -25,11 +24,6 @@ class MatchEventDetector:
         return current_score, current_time
 
     def detect_change(self):
-        """
-        Compares current state to previous state. 
-        Returns True if a relevant 'event' happened (like a goal or significant time jump not just 1 min).
-        For this MVP, we consider ANY score change to be a trigger.
-        """
         current_score, current_time = self.capture_current_state()
         
         if current_score is None:

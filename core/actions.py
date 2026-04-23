@@ -17,7 +17,6 @@ class CommentActions:
         self.navigator = navigator
 
     def simulate_human_behavior(self):
-        """Simulates random swiping/scrolling and reading pauses to avoid bot detection."""
         logger.trace("Simulating human behavior...")
         try:
             window_size = self.driver.get_window_size()
@@ -44,7 +43,6 @@ class CommentActions:
             logger.debug(f"Scroll simulation failed: {e}")
 
     def post_comment(self, comment_text, dry_run=False):
-        """Executes the action of posting a comment with strict performance bounds and state-machine recovery."""
         logger.info(f"Posting comment: '{comment_text}'")
         
         recovery_attempts = 0

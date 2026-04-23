@@ -41,7 +41,6 @@ if not logger.handlers:
     logger.addHandler(f_handler)
 
 def random_delay(min_seconds=1.0, max_seconds=3.0):
-    """Pauses execution for a random amount of time to simulate human behavior."""
     delay = random.uniform(min_seconds, max_seconds)
     logger.trace(f"Sleeping for {delay:.2f} seconds...")
     time.sleep(delay)

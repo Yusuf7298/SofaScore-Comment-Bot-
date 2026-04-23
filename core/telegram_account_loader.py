@@ -11,7 +11,6 @@ class TelegramAccountLoader:
         self.api_url = f"https://api.telegram.org/bot{self.bot_token}/getUpdates"
         
     def fetch_accounts(self, retries=3):
-        """Fetches recent payloads from Telegram securely without logging raw tokens."""
         for attempt in range(retries):
             try:
                 response = requests.get(self.api_url, timeout=10)
@@ -29,7 +28,6 @@ class TelegramAccountLoader:
         return []
 
     def _parse_messages(self, data):
-        """Parses username:password:proxy format strictly avoiding logs of sensitive credentials."""
         parsed_accounts = []
         try:
             results = data.get("result", [])
@@ -61,7 +59,6 @@ class TelegramAccountLoader:
         return parsed_accounts
         
     def sync_accounts(self, local_file_path="accounts/accounts.json"):
-        """Synchronizes and merges telegram payloads securely into the local JSON manifest."""
         remote_accounts = self.fetch_accounts()
         if not remote_accounts:
             return False

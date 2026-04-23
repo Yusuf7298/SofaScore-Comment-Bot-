@@ -14,7 +14,6 @@ class Scheduler:
         self.session_manager = SessionManager()
         
     def run_sequential(self):
-        """Runs accounts one after another in a loop"""
         bot_settings = self.config.get("bot", {})
         anti_ban = self.config.get("anti_ban", {})
         
@@ -66,7 +65,6 @@ class Scheduler:
             time.sleep(rest_delay)
 
     def _run_account_cycle(self, username, driver, account):
-        """The actual commenting cycle for a single account session - Now with Sport Rotation"""
         navigator = Navigator(driver)
         actions = CommentActions(driver, navigator)
         bot_settings = self.config.get("bot", {})
@@ -76,10 +74,13 @@ class Scheduler:
         
         random_delay(anti_ban.get("min_delay_sec", 3), anti_ban.get("max_delay_sec", 10))
         
-        # MULTI-SPORT CYCLE
         allowed_sports = self.config.get("match_filters", {}).get("allowed_sports", ["Football"])
+        sport_comments_data = self.config.get("sport_comments", {})
         comments_posted_session = 0
         max_total = bot_settings.get("max_comments", 5)
+        
+        used_comments = {s: set() for s in allowed_sports}
+        used_comments["default"] = set()
         
         for sport in allowed_sports:
             if comments_posted_session >= max_total:
@@ -88,7 +89,6 @@ class Scheduler:
                 
             logger.info(f"[{username}] Starting cycle for sport: {sport}")
             
-            # 1. SELECT MATCH FOR THIS SPORT
             match_filters = self.config.get("match_filters", {}).copy()
             match_filters["allowed_sports"] = [sport]
             
@@ -96,20 +96,25 @@ class Scheduler:
                 logger.warning(f"[{username}] No matches available for {sport}. Switching to next sport.")
                 continue
             
-            # 2. NAVIGATE & POST
             if not navigator.navigate_to_discussion_tab():
                 logger.error(f"[{username}] Could not open discussion for {sport}.")
                 continue
                 
             actions.simulate_human_behavior()
             
-            # 3. POST IMMEDIATELY (Eager Posting)
-            if not available_comments:
-                logger.warning(f"[{username}] Out of unique comments.")
+            sport_list = sport_comments_data.get(sport, sport_comments_data.get("default", []))
+            options = [c for c in sport_list if c not in used_comments.get(sport, used_comments["default"])]
+            
+            if not options:
+                logger.warning(f"[{username}] Out of unique comments for {sport}. Using default fallback.")
+                options = [c for c in sport_comments_data.get("default", []) if c not in used_comments["default"]]
+            
+            if not options:
+                logger.warning(f"[{username}] Completely out of unique comments. Ending session.")
                 break
                 
-            selected_comment = random.choice(available_comments)
-            available_comments.remove(selected_comment)
+            selected_comment = random.choice(options)
+            used_comments[sport if sport in used_comments else "default"].add(selected_comment)
             
             success = actions.post_comment(selected_comment, dry_run=dry_run_enabled)
             
@@ -123,6 +128,5 @@ class Scheduler:
                 logger.error(f"[{username}] Post failed in {sport}.")
                 self.account_manager.record_failure(username)
             
-            # The next loop's 'select_eligible_match' handles backing out to home
             
         logger.info(f"[{username}] Account cycle finished.")

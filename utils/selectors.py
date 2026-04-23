@@ -1,8 +1,5 @@
 from appium.webdriver.common.appiumby import AppiumBy
 
-"""
-Selectors for Sofascore UI components using Adaptive Priority Structures.
-"""
 
 SCORE_TEXT = [
     {"by": AppiumBy.ID, "value": "com.sofascore.results:id/score_text", "timeout": 1.0},
@@ -19,15 +16,14 @@ MATCH_TIME_TEXT = [
 ]
 
 DISCUSSION_TAB_SELECTOR = [
-    {"by": AppiumBy.ID, "value": "com.sofascore.results:id/multiStateFab", "timeout": 1.0},
+    {"by": AppiumBy.ID, "value": "com.sofascore.results:id/multiStateFab", "timeout": 2.0},
     {"by": AppiumBy.ID, "value": "com.sofascore.results:id/multi_state_fab", "timeout": 1.0},
-    {"by": AppiumBy.XPATH, "value": "//*[@text='CHAT' or @text='Chat' or @text='DISCUSSION' or @text='Comments']", "timeout": 1.0},
+    {"by": AppiumBy.ID, "value": "com.sofascore.results:id/button_join_discussion", "timeout": 1.0},
+    {"by": AppiumBy.XPATH, "value": "//*[@text='CHAT' or @text='Chat' or @text='DISCUSSION' or @text='Comments' or contains(@text, 'SOCIAL') or contains(@text, 'JOIN')]", "timeout": 1.0},
     {"by": AppiumBy.ACCESSIBILITY_ID, "value": "Chat", "timeout": 0.5},
     {"by": AppiumBy.ACCESSIBILITY_ID, "value": "Comments", "timeout": 0.5},
     {"by": AppiumBy.ACCESSIBILITY_ID, "value": "Discussion", "timeout": 0.5},
-    {"by": AppiumBy.ANDROID_UIAUTOMATOR, "value": 'new UiSelector().textMatches("(?i)chat|discussion|comments")', "timeout": 0.5},
-    {"by": AppiumBy.CLASS_NAME, "value": "com.google.android.material.floatingactionbutton.FloatingActionButton", "timeout": 0.5},
-    {"by": AppiumBy.XPATH, "value": "//*[contains(@resource-id, 'fab') or contains(@resource-id, 'chat') or contains(@resource-id, 'comment_button')]", "timeout": 0.5}
+    {"by": AppiumBy.ANDROID_UIAUTOMATOR, "value": 'new UiSelector().textMatches("(?i)chat|discussion|comments|social|join")', "timeout": 0.5}
 ]
 
 COMMENT_INPUT_BOX = [

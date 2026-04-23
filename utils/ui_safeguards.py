@@ -8,7 +8,6 @@ class SafeUI:
         self.driver = driver
         self.default_timeout = default_timeout
     def safe_find(self, selector_chain, timeout=None, retries=3):
-        """Finds an element using a fallback chain, waiting for its presence."""
         wait_time = timeout if timeout else self.default_timeout
         wait = WebDriverWait(self.driver, wait_time, ignored_exceptions=[StaleElementReferenceException])
         
@@ -30,7 +29,6 @@ class SafeUI:
         logger.error(f"Could not locate element after all {retries} retries using chain: {selector_chain}")
         return None
     def safe_click(self, selector_chain, timeout=None, retries=3):
-        """Finds an element and clicks it, waiting for it to be clickable."""
         wait_time = timeout if timeout else self.default_timeout
         wait = WebDriverWait(self.driver, wait_time, ignored_exceptions=[StaleElementReferenceException])
         
@@ -54,7 +52,6 @@ class SafeUI:
         logger.error(f"Could not click element after all {retries} retries using chain: {selector_chain}")
         return False
     def safe_send_keys(self, selector_chain, text, timeout=None, retries=3):
-        """Finds an input box, clicks it, and sends keys safely."""
         wait_time = timeout if timeout else self.default_timeout
         wait = WebDriverWait(self.driver, wait_time, ignored_exceptions=[StaleElementReferenceException])
         

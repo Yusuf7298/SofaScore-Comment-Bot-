@@ -55,7 +55,6 @@ class ValidationRunner:
         }
         
     def _stress_monkey_patch(self):
-        """Final Audit: Injection of real-world latency and failure handling verification."""
         original_fast_poll = Navigator._fast_poll_elements
         
         def stressed_poll(nav_self, optimized_list, require_interactable=False, global_timeout=5.0):

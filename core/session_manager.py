@@ -17,7 +17,6 @@ class SessionManager:
         self.active_sessions = {}
 
     def start_session(self, account):
-        """Initializes the Appium driver session for a specific account/device."""
         udid = account.get("emulator_udid")
         username = account.get("username")
         proxy = account.get("proxy")
@@ -65,7 +64,6 @@ class SessionManager:
             return None
 
     def close_session(self, username):
-        """Quits the Appium session safely and removes proxy."""
         session_info = self.active_sessions.get(username)
         if not session_info:
             return

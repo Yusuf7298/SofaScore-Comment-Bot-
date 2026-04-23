@@ -13,7 +13,6 @@ class Navigator:
         self.performance_metrics = {"total_finds": 0, "total_time": 0.0}
 
     def _get_optimized_selectors(self, selectors_list, memory_key=None):
-        """Returns selectors sorted dynamically by historical success strikes to instantly fast-track successful pipelines."""
         if memory_key is None or not isinstance(selectors_list[0], dict):
             return selectors_list
             
@@ -40,11 +39,6 @@ class Navigator:
         logger.success(f"[METRIC] Found in {resolution_time:.2f}s | Fallbacks: {fallbacks_used} | Avg: {avg_time:.2f}s")
 
     def _fast_poll_elements(self, optimized_list, require_interactable=False, global_timeout=4.0):
-        """
-        PARALLEL CHECK LOGIC: 
-        Disables Appium implicit waits, instantly looping through all selectors against the DOM 
-        without blocking. Returns the absolute fastest resolution under the global cap.
-        """
         self.driver.implicitly_wait(0)
         start_time = time.time()
         
@@ -76,7 +70,6 @@ class Navigator:
         return None, None, (time.time() - start_time), fallbacks_used
 
     def safe_find(self, selectors_list, global_timeout=5.0, retries=1, **kwargs):
-        """Non-blocking parallel DOM polling to resolve UI elements instantly."""
         memory_key = selectors_list[0].get("value") if isinstance(selectors_list[0], dict) else str(selectors_list)
         optimized_list = self._get_optimized_selectors(selectors_list, memory_key)
         
@@ -91,7 +84,6 @@ class Navigator:
         return None
 
     def safe_click(self, selectors_list, global_timeout=5.0, retries=1, **kwargs):
-        """Fast-fail resolution and interaction."""
         memory_key = selectors_list[0].get("value") if isinstance(selectors_list[0], dict) else str(selectors_list)
         optimized_list = self._get_optimized_selectors(selectors_list, memory_key)
         
@@ -110,7 +102,6 @@ class Navigator:
         return False
 
     def safe_type(self, selectors_list, text, global_timeout=5.0, retries=1, **kwargs):
-        """Instantly locates and injects payloads via unblocked queries."""
         memory_key = selectors_list[0].get("value") if isinstance(selectors_list[0], dict) else str(selectors_list)
         optimized_list = self._get_optimized_selectors(selectors_list, memory_key)
         
@@ -135,21 +126,33 @@ class Navigator:
         return False
 
     def select_eligible_match(self, filters):
-        """Locates and enters a professional match based on sport and league exclusion criteria."""
         allowed_sports = filters.get("allowed_sports", [])
         exclude_keywords = [k.lower() for k in filters.get("exclude_keywords", [])]
         size = self.driver.get_window_size()
         
-        # 0. RETURN TO HOME (Back out of any open matches)
         logger.debug("Ensuring we are on the home screen...")
-        for _ in range(3):
-            # If we see the 'Football' tab, we are home
+        for _ in range(5):
             if self.safe_find([{"by": AppiumBy.XPATH, "value": "//*[@text='Football' or @text='SOCCER']"}], global_timeout=1.0):
+                logger.debug("Home screen detected.")
                 break
-            self.driver.press_keycode(4) # Back key
+            
+            matches_tab = [{"by": AppiumBy.ID, "value": "com.sofascore.results:id/navigation_matches"}, {"by": AppiumBy.ACCESSIBILITY_ID, "value": "Matches"}]
+            if self.safe_click(matches_tab, global_timeout=0.5):
+                time.sleep(1)
+                if self.safe_find([{"by": AppiumBy.XPATH, "value": "//*[@text='Football' or @text='SOCCER']"}], global_timeout=1.0):
+                    break
+            
+            self.driver.press_keycode(4)
             time.sleep(1)
+            
+        if not self.safe_find([{"by": AppiumBy.XPATH, "value": "//*[@text='Football' or @text='SOCCER']"}], global_timeout=1.0):
+            logger.warning("Main screen not found. Attempting to relaunch app...")
+            try:
+                self.driver.activate_app("com.sofascore.results")
+                time.sleep(5)
+            except Exception as e:
+                logger.error(f"Failed to relaunch app: {e}")
 
-        # 0.5 RESET MENU TO START (Swipe Left)
         logger.debug("Resetting sport menu to start...")
         for _ in range(3):
             self.driver.swipe(size['width']*0.2, size['height']*0.15, size['width']*0.8, size['height']*0.15, 1000)
@@ -158,11 +161,9 @@ class Navigator:
         from utils.selectors import SPORT_CATEGORY_ICON, MATCH_LIST_ITEM
         
         for sport in allowed_sports:
-            # Fallback for Football -> Soccer
             sport_names = [sport]
             if sport == "Football": sport_names.append("Soccer")
             
-            # 1. Attempt to find and click the sport icon
             success = False
             for name in sport_names:
                 logger.info(f"Checking for eligible {name} matches...")
@@ -170,15 +171,15 @@ class Navigator:
                 success = self.safe_click(sport_selector, global_timeout=2.0)
                 if success: break
             
-            # If not found, attempt bidirectional swipes (Right then Left)
             if not success:
                 for direction in ["right", "left"]:
                     logger.debug(f"{sport} not visible. Swiping category bar {direction}...")
-                    for swipe_attempt in range(3):
+                    for swipe_attempt in range(6):
                         if direction == "right":
                             self.driver.swipe(size['width']*0.8, size['height']*0.15, size['width']*0.2, size['height']*0.15, 1000)
                         else:
                             self.driver.swipe(size['width']*0.2, size['height']*0.15, size['width']*0.8, size['height']*0.15, 1000)
+                        time.sleep(0.5)
                         
                         for name in sport_names:
                             sport_selector = [{"by": s["by"], "value": s["value"].format(sport=name)} for s in SPORT_CATEGORY_ICON]
@@ -190,7 +191,6 @@ class Navigator:
             if not success:
                 continue
                 
-            # 2. FORCE "LIVE" TAB SELECTION (Conditional)
             logger.info("Checking LIVE filter state...")
             live_selectors = [
                 {"by": AppiumBy.XPATH, "value": "//*[@text='Live' or @text='LIVE']"},
@@ -199,7 +199,6 @@ class Navigator:
             ]
             live_btn = self.safe_find(live_selectors, global_timeout=3.0)
             if live_btn:
-                # Only click if not already active (checked/selected)
                 is_active = live_btn.get_attribute("selected") == "true" or live_btn.get_attribute("checked") == "true"
                 if not is_active:
                     logger.info("Activating LIVE filter...")
@@ -207,25 +206,18 @@ class Navigator:
                 else:
                     logger.info("LIVE filter already active.")
             
-            # Refresh UI Cache
             _ = self.driver.page_source
             random_delay(2, 4)
             self.driver.implicitly_wait(0)
             
-            # 3. SCAN FOR MATCHES (Multi-Strategy)
-            # Strategy A: Find by Score Patterns (Colon, HT, or Minute Mark)
-            # This finds the TEXT and then drills UP to the clickable parent
             matches = self.driver.find_elements(AppiumBy.XPATH, "//*[contains(@text, ':') or contains(@text, \"'\") or @text='HT']/ancestor::*[@clickable='true']")
             
-            # Strategy B: Find by known IDs
             if not matches:
                 matches = self.driver.find_elements(AppiumBy.XPATH, "//*[(contains(@resource-id, 'match') or contains(@resource-id, 'event')) and @clickable='true']")
                 
-            # Strategy C: Text-Heavy Clickable items (Any group with 3+ TextViews)
             if not matches:
                 matches = self.driver.find_elements(AppiumBy.XPATH, "//*[@clickable='true' and count(.//android.widget.TextView) >= 3]")
             
-            # Strategy D: Android UiAutomator deep sweep
             if not matches:
                 matches = self.driver.find_elements(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().clickable(true).resourceIdMatches("(?i).*(match|event|cell|item).*")')
 
@@ -262,9 +254,22 @@ class Navigator:
 
     def navigate_to_discussion_tab(self):
         logger.trace("Navigating to Discussion Tab...")
-        success = self.safe_click(DISCUSSION_TAB_SELECTOR, global_timeout=4.0)
-        if success:
+        from utils.selectors import DISCUSSION_TAB_SELECTOR
+        
+        if self.safe_click(DISCUSSION_TAB_SELECTOR, global_timeout=3.0):
             random_delay(2, 4)
             return True
+            
+        logger.info("Chat button not found. Attempting to swipe top tabs...")
+        size = self.driver.get_window_size()
+        tab_y = int(size['height'] * 0.28)
+        
+        for _ in range(4):
+            self.driver.swipe(int(size['width']*0.8), tab_y, int(size['width']*0.2), tab_y, 800)
+            time.sleep(0.8)
+            if self.safe_click(DISCUSSION_TAB_SELECTOR, global_timeout=1.5):
+                random_delay(2, 4)
+                return True
+                
         return False
 
