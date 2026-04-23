@@ -146,39 +146,61 @@ class Navigator:
             logger.info(f"Checking for eligible {sport} matches...")
             
             sport_selector = [{"by": s["by"], "value": s["value"].format(sport=sport)} for s in SPORT_CATEGORY_ICON]
-            if not self.safe_click(sport_selector, global_timeout=2.0):
+            
+            # 1. Attempt to find and click the sport icon
+            success = self.safe_click(sport_selector, global_timeout=2.0)
+            
+            # 1b. If not found, attempt a horizontal swipe of the category bar
+            if not success:
+                logger.debug(f"{sport} icon not visible. Attempting horizontal swipe...")
+                try:
+                    size = self.driver.get_window_size()
+                    # Swipe from right to left at the top of the screen where categories are
+                    self.driver.swipe(size['width']*0.8, 200, size['width']*0.2, 200, 500)
+                    time.sleep(1)
+                    success = self.safe_click(sport_selector, global_timeout=2.0)
+                except Exception as e:
+                    logger.debug(f"Swipe failed: {e}")
+            
+            if not success:
+                logger.warning(f"Could not locate {sport} category icon. Skipping.")
                 continue
                 
-            random_delay(1, 2)
+            # 2. Wait for list to refresh
+            random_delay(2, 3)
             
             self.driver.implicitly_wait(0)
             matches = self.driver.find_elements(MATCH_LIST_ITEM[0]["by"], MATCH_LIST_ITEM[0]["value"])
             
             if not matches:
-                logger.debug(f"No active {sport} matches found on screen.")
+                logger.debug(f"No active matches visible for {sport}.")
                 continue
                 
             for match in matches:
                 try:
-                    match_info = match.get_attribute("content-desc") or ""
-                    match_text = match.text or ""
+                    match_info = str(match.get_attribute("content-desc") or "").lower()
+                    match_text = str(match.text or "").lower()
                     
-                    is_amateur = any(word in match_info.lower() or word in match_text.lower() for word in exclude_keywords)
+                    found_keyword = None
+                    for word in exclude_keywords:
+                        if word in match_info or word in match_text:
+                            found_keyword = word
+                            break
                     
-                    if not is_amateur:
-                        logger.success(f"Eligible professional match found: {match_text or 'Match'}")
+                    if not found_keyword:
+                        logger.success(f"Eligible professional match found: {match_text[:30] or 'Match'}")
                         match.click()
                         random_delay(2, 4)
                         self.driver.implicitly_wait(10)
                         return True
                     else:
-                        logger.warning(f"Skipping amateur/youth match: {match_text or 'Match'}")
+                        logger.warning(f"Filtered out match: contains '{found_keyword}'")
                 except Exception as e:
                     logger.debug(f"Error evaluating match cell: {e}")
                     continue
         
         self.driver.implicitly_wait(10)
-        logger.error("No eligible professional matches found after scanning all categories.")
+        logger.error("No eligible professional matches found in any allowed category.")
         return False
 
     def navigate_to_discussion_tab(self):
