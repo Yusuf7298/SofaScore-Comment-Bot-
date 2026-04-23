@@ -61,95 +61,68 @@ class Scheduler:
             finally:
                 self.session_manager.close_session(username)
                 
-            rest_delay = anti_ban.get("account_switch_delay_seconds", 30)
+            rest_delay = anti_ban.get("account_switch_delay_seconds", 15)
             logger.info(f"Resting for {rest_delay}s before next account...")
             time.sleep(rest_delay)
 
     def _run_account_cycle(self, username, driver, account):
-        """The actual commenting cycle for a single account session"""
+        """The actual commenting cycle for a single account session - Now with Sport Rotation"""
         navigator = Navigator(driver)
         actions = CommentActions(driver, navigator)
-        detector = MatchEventDetector(navigator)
-        anti_ban = self.config.get("anti_ban", {})
         bot_settings = self.config.get("bot", {})
-        available_comments = self.config.get("comments", [])
+        available_comments = list(self.config.get("comments", []))
         dry_run_enabled = bot_settings.get("dry_run", False)
+        anti_ban = self.config.get("anti_ban", {})
         
-        random_delay(anti_ban.get("min_delay_sec", 5), anti_ban.get("max_delay_sec", 15))
+        random_delay(anti_ban.get("min_delay_sec", 3), anti_ban.get("max_delay_sec", 10))
         
-        # 0. AUTOMATED MATCH SELECTION
-        if bot_settings.get("auto_match_selection", False):
-            match_filters = self.config.get("match_filters", {})
-            if not navigator.select_eligible_match(match_filters):
-                logger.error(f"[{username}] Could not find an eligible match. Ending cycle.")
-                return
+        # MULTI-SPORT CYCLE
+        allowed_sports = self.config.get("match_filters", {}).get("allowed_sports", ["Football"])
+        comments_posted_session = 0
+        max_total = bot_settings.get("max_comments", 5)
         
-        logger.info(f"[{username}] Navigating to discussion tab...")
-        if not navigator.navigate_to_discussion_tab():
-            logger.error(f"[{username}] Failed to open discussion panel. Match might not have comments enabled.")
-            return
-        
-        actions.simulate_human_behavior()
-        
-        logger.info(f"[{username}] Polling match state for an event...")
-        polling_duration = bot_settings.get("polling_interval_seconds", 15)
-        
-        max_polls = bot_settings.get("max_polls_per_match", 3)
-        comments_posted_this_match = 0
-        max_per_match = bot_settings.get("max_comments_per_match", 1)
-        
-        for i in range(max_polls):
-            if comments_posted_this_match >= max_per_match:
-                logger.info(f"[{username}] Reached max comments for this match ({max_per_match}). Ending cycle.")
+        for sport in allowed_sports:
+            if comments_posted_session >= max_total:
+                logger.info(f"[{username}] Reached session limit ({max_total}).")
                 break
                 
-            if dry_run_enabled:
-                event_happened = True
-            else:
-                event_happened = detector.detect_change()
+            logger.info(f"[{username}] Starting cycle for sport: {sport}")
             
-            if event_happened:
-                skip_chance = anti_ban.get("skip_chance_percent", 20)
-                if random.randint(1, 100) <= skip_chance:
-                    logger.warning(f"[{username}] Skipped action (anti-ban)")
-                    time.sleep(random.uniform(2.0, 5.0))
-                    break 
-
-                logger.info(f"[{username}] Event detected. Preparing to comment...")
-                actions.simulate_human_behavior()
+            # 1. SELECT MATCH FOR THIS SPORT
+            match_filters = self.config.get("match_filters", {}).copy()
+            match_filters["allowed_sports"] = [sport]
+            
+            if not navigator.select_eligible_match(match_filters):
+                logger.warning(f"[{username}] No matches available for {sport}. Switching to next sport.")
+                continue
+            
+            # 2. NAVIGATE & POST
+            if not navigator.navigate_to_discussion_tab():
+                logger.error(f"[{username}] Could not open discussion for {sport}.")
+                continue
                 
-                if not available_comments:
-                    logger.warning(f"[{username}] Out of unique comments to post.")
-                    break
-                    
-                selected_comment = random.choice(available_comments)
-                available_comments.remove(selected_comment)
+            actions.simulate_human_behavior()
+            
+            # 3. POST IMMEDIATELY (Eager Posting)
+            if not available_comments:
+                logger.warning(f"[{username}] Out of unique comments.")
+                break
                 
-                success = actions.post_comment(selected_comment, dry_run=dry_run_enabled)
-                
-                if success:
-                    comments_posted_this_match += 1
-                    self.account_manager.mark_usage(username)
-                    cooldown = bot_settings.get("cooldown_between_comments_seconds", 120)
-                    logger.success(f"[{username}] Comment sequence complete! Waiting {cooldown}s before tearing down session.")
-                    
-                    slept = 0
-                    while slept < cooldown:
-                        chunk = min(30, cooldown - slept)
-                        time.sleep(chunk)
-                        slept += chunk
-                        try:
-                            driver.get_window_size()
-                            logger.trace(f"[{username}] Heartbeat sent to keep session alive during cooldown ({slept}/{cooldown}s)")
-                        except Exception as e:
-                            logger.warning(f"[{username}] Heartbeat failed, session may be unstable: {e}")
-                            
-                else:
-                    logger.error(f"[{username}] Failed to post comment.")
-                    self.account_manager.record_failure(username)
-                break 
+            selected_comment = random.choice(available_comments)
+            available_comments.remove(selected_comment)
+            
+            success = actions.post_comment(selected_comment, dry_run=dry_run_enabled)
+            
+            if success:
+                comments_posted_session += 1
+                self.account_manager.mark_usage(username)
+                cooldown = bot_settings.get("cooldown_between_comments_seconds", 15)
+                logger.success(f"[{username}] Posted successfully in {sport}! Waiting {cooldown}s before next sport...")
+                time.sleep(cooldown)
             else:
-                logger.debug(f"[{username}] No event detected (Attempt {i+1}/{max_polls}). Sleeping {polling_duration}s.")
-                time.sleep(polling_duration)
-        
+                logger.error(f"[{username}] Post failed in {sport}.")
+                self.account_manager.record_failure(username)
+            
+            # The next loop's 'select_eligible_match' handles backing out to home
+            
         logger.info(f"[{username}] Account cycle finished.")

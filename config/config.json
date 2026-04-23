@@ -11,21 +11,21 @@
   "execution_mode": "sequential",
   "match_filters": {
     "allowed_sports": ["Football", "Tennis", "Basketball", "Baseball", "Cricket"],
-    "exclude_keywords": ["Amateur", "U19", "U18", "Youth"],
+    "exclude_keywords": ["Amateur", "U19", "U18", "U17", "U16", "U20", "U21", "U23", "Youth", "Women", "Reserve", "Cup", "Preliminary", "Friendly"],
     "min_league_rank": 1
   },
   "bot": {
-    "dry_run": true,
+    "dry_run": false,
     "polling_interval_seconds": 15,
     "max_comments": 10,
-    "cooldown_between_comments_seconds": 120,
+    "cooldown_between_comments_seconds": 15,
     "auto_match_selection": true
   },
   "anti_ban": {
     "min_delay_sec": 3,
     "max_delay_sec": 12,
-    "skip_chance_percent": 15,
-    "account_switch_delay_seconds": 30
+    "skip_chance_percent": 0,
+    "account_switch_delay_seconds": 15
   },
   "comments": [
     "What a game so far! Let's see who breaks the deadlock.",

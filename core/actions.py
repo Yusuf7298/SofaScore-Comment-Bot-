@@ -75,14 +75,25 @@ class CommentActions:
         if not self.navigator.safe_type(COMMENT_INPUT_BOX, text=comment_text, global_timeout=4.0):
             logger.error("Failed to type comment. Aborting.")
             return False
+            
+        try:
+            self.driver.hide_keyboard()
+            time.sleep(0.5)
+        except:
+            pass
                 
         if dry_run:
             logger.success("Comment simulated successfully (Dry Run).")
             return True
             
         if not self.navigator.safe_click(POST_COMMENT_BUTTON, global_timeout=3.0):
-            logger.error("Failed to click Send button.")
-            return False
+            logger.warning("Failed to click Send button. Trying Enter key backup...")
+            try:
+                self.driver.press_keycode(66)
+                time.sleep(1)
+            except Exception as e:
+                logger.error(f"Post failed: {e}")
+                return False
             
         logger.trace("Verifying post...")
         posted_text_selector = [{"by": AppiumBy.XPATH, "value": f"//*[contains(@text, '{comment_text}')]"}]

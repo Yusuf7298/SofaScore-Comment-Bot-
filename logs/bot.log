@@ -6104,3 +6104,2074 @@ Error: Could not find a connected Android device in 20000ms
 2026-04-23 09:51:58,067 - [ERROR] Account user1 temporarily disabled
 2026-04-23 09:51:58,068 - [WARNING] All accounts have failed or hit limits. Stopping scheduler.
 2026-04-23 09:51:58,068 - [INFO] Bot execution terminated.
+2026-04-23 11:39:45,211 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 11:39:45,212 - [INFO] Execution Mode: sequential
+2026-04-23 11:39:45,213 - [INFO] Loaded 1 accounts.
+2026-04-23 11:39:45,214 - [INFO] Starting execution pool.
+2026-04-23 11:39:45,215 - [INFO] Running account: user1
+2026-04-23 11:39:45,215 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:39:50,862 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:39:50,864 - [TRACE] Sleeping for 8.57 seconds...
+2026-04-23 11:39:59,474 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:40:01,388 - [SUCCESS] [METRIC] Found in 1.80s | Fallbacks: 0 | Avg: 1.80s
+2026-04-23 11:40:01,389 - [TRACE] Sleeping for 3.32 seconds...
+2026-04-23 11:40:15,228 - [INFO] Found 0 total matches in Football list. Evaluating eligibility...
+2026-04-23 11:40:15,228 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 11:40:18,000 - [SUCCESS] [METRIC] Found in 1.81s | Fallbacks: 0 | Avg: 1.81s
+2026-04-23 11:40:18,000 - [TRACE] Sleeping for 3.61 seconds...
+2026-04-23 11:40:32,085 - [INFO] Found 0 total matches in Tennis list. Evaluating eligibility...
+2026-04-23 11:40:32,086 - [INFO] Checking for eligible Basketball matches...
+2026-04-23 11:40:33,159 - [SUCCESS] [METRIC] Found in 0.96s | Fallbacks: 0 | Avg: 1.52s
+2026-04-23 11:40:33,159 - [TRACE] Sleeping for 3.25 seconds...
+2026-04-23 11:40:46,541 - [INFO] Found 0 total matches in Basketball list. Evaluating eligibility...
+2026-04-23 11:40:46,541 - [INFO] Checking for eligible Baseball matches...
+2026-04-23 11:40:50,172 - [SUCCESS] [METRIC] Found in 3.07s | Fallbacks: 0 | Avg: 1.91s
+2026-04-23 11:40:50,173 - [TRACE] Sleeping for 2.70 seconds...
+2026-04-23 11:41:03,396 - [INFO] Found 0 total matches in Baseball list. Evaluating eligibility...
+2026-04-23 11:41:03,397 - [INFO] Checking for eligible Cricket matches...
+2026-04-23 11:41:05,428 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:41:05,430 - [INFO] Cricket not visible. Swiping category bar (Attempt 1)...
+2026-04-23 11:41:10,736 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:41:10,736 - [INFO] Cricket not visible. Swiping category bar (Attempt 2)...
+2026-04-23 11:41:14,980 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:41:14,980 - [INFO] Cricket not visible. Swiping category bar (Attempt 3)...
+2026-04-23 11:41:20,179 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:41:20,179 - [WARNING] Could not locate Cricket category icon after swiping.
+2026-04-23 11:41:20,185 - [ERROR] No eligible professional matches found in any allowed category.
+2026-04-23 11:41:20,185 - [ERROR] [user1] Could not find an eligible match. Ending cycle.
+2026-04-23 11:41:20,186 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:41:20,903 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:41:20,904 - [INFO] Resting for 30s before next account...
+2026-04-23 11:41:21,626 - [INFO] Bot manually stopped by user.
+2026-04-23 11:41:21,627 - [INFO] Bot execution terminated.
+2026-04-23 11:41:36,268 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 11:41:36,268 - [INFO] Execution Mode: sequential
+2026-04-23 11:41:36,269 - [INFO] Loaded 1 accounts.
+2026-04-23 11:41:36,271 - [INFO] Starting execution pool.
+2026-04-23 11:41:36,271 - [INFO] Running account: user1
+2026-04-23 11:41:36,272 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:41:40,786 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:41:40,787 - [TRACE] Sleeping for 9.26 seconds...
+2026-04-23 11:41:50,079 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:41:52,678 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:41:52,678 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 11:41:56,613 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:41:56,613 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:41:57,536 - [ERROR] [user1] Encountered fatal error during cycle: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 162, in select_eligible_match
+    self.driver.swipe(size['width']*0.9, size['height']*0.15, size['width']*0.1, size['height']*0.15, 600)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\extensions\action_helpers.py", line 158, in swipe
+    actions.perform()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.InvalidElementStateException: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+
+2026-04-23 11:41:57,553 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 11:41:57,553 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:41:58,204 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:41:58,205 - [INFO] Resting for 30s before next account...
+2026-04-23 11:42:28,206 - [INFO] Running account: user1
+2026-04-23 11:42:28,207 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:42:32,523 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:42:32,523 - [TRACE] Sleeping for 5.01 seconds...
+2026-04-23 11:42:37,562 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:42:43,708 - [SUCCESS] [METRIC] Found in 3.39s | Fallbacks: 0 | Avg: 3.39s
+2026-04-23 11:42:43,709 - [ERROR] [user1] Encountered fatal error during cycle: name 'AppiumBy' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 175, in select_eligible_match
+    {"by": AppiumBy.XPATH, "value": "//*[@text='LIVE' or @text='Live']"},
+           ^^^^^^^^
+NameError: name 'AppiumBy' is not defined
+2026-04-23 11:42:43,711 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 11:42:43,712 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:42:44,327 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:42:44,328 - [INFO] Resting for 30s before next account...
+2026-04-23 11:43:14,329 - [INFO] Running account: user1
+2026-04-23 11:43:14,330 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:43:18,859 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:43:18,860 - [TRACE] Sleeping for 10.06 seconds...
+2026-04-23 11:43:28,951 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:43:29,586 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:43:30,317 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:43:30,319 - [INFO] Bot manually stopped by user.
+2026-04-23 11:43:30,323 - [INFO] Bot execution terminated.
+2026-04-23 11:44:32,813 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 11:44:32,814 - [INFO] Execution Mode: sequential
+2026-04-23 11:44:32,815 - [INFO] Loaded 1 accounts.
+2026-04-23 11:44:32,817 - [INFO] Starting execution pool.
+2026-04-23 11:44:32,817 - [INFO] Running account: user1
+2026-04-23 11:44:32,818 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:44:37,764 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:44:37,765 - [TRACE] Sleeping for 4.33 seconds...
+2026-04-23 11:44:42,133 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:44:43,638 - [SUCCESS] [METRIC] Found in 1.36s | Fallbacks: 0 | Avg: 1.36s
+2026-04-23 11:44:43,639 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:44:43,639 - [ERROR] [user1] Encountered fatal error during cycle: name 'AppiumBy' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 175, in select_eligible_match
+    {"by": AppiumBy.XPATH, "value": "//*[@text='LIVE' or @text='Live' or @text='live']"},
+           ^^^^^^^^
+NameError: name 'AppiumBy' is not defined
+2026-04-23 11:44:43,643 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 11:44:43,643 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:44:44,354 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:44:44,355 - [INFO] Resting for 30s before next account...
+2026-04-23 11:45:14,356 - [INFO] Running account: user1
+2026-04-23 11:45:14,356 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:45:19,015 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:45:19,016 - [TRACE] Sleeping for 6.25 seconds...
+2026-04-23 11:45:25,292 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:45:27,849 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:45:27,850 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 11:45:30,672 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:45:30,672 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:45:33,626 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:45:34,725 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:45:34,726 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:45:37,357 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:45:38,462 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:45:38,462 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 11:45:43,850 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:45:43,851 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:45:45,861 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:45:45,862 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:45:47,866 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:45:47,867 - [INFO] Checking for eligible Basketball matches...
+2026-04-23 11:45:49,927 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:45:49,927 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 11:45:52,266 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:45:52,267 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 11:45:53,174 - [ERROR] [user1] Encountered fatal error during cycle: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 162, in select_eligible_match
+    self.driver.swipe(size['width']*0.9, size['height']*0.15, size['width']*0.1, size['height']*0.15, 600)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\extensions\action_helpers.py", line 158, in swipe
+    actions.perform()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.InvalidElementStateException: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+
+2026-04-23 11:45:53,184 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 11:45:53,184 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:45:53,730 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:45:53,731 - [INFO] Resting for 30s before next account...
+2026-04-23 11:46:00,466 - [INFO] Bot manually stopped by user.
+2026-04-23 11:46:00,467 - [INFO] Bot execution terminated.
+2026-04-23 11:46:32,060 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 11:46:32,082 - [INFO] Execution Mode: sequential
+2026-04-23 11:46:32,083 - [INFO] Loaded 1 accounts.
+2026-04-23 11:46:32,084 - [INFO] Starting execution pool.
+2026-04-23 11:46:32,085 - [INFO] Running account: user1
+2026-04-23 11:46:32,085 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:46:36,932 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:46:36,932 - [TRACE] Sleeping for 3.72 seconds...
+2026-04-23 11:46:40,804 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:46:42,317 - [SUCCESS] [METRIC] Found in 1.38s | Fallbacks: 0 | Avg: 1.38s
+2026-04-23 11:46:42,318 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:46:42,318 - [ERROR] [user1] Encountered fatal error during cycle: name 'AppiumBy' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 175, in select_eligible_match
+    {"by": AppiumBy.XPATH, "value": "//*[@text='LIVE' or @text='Live' or @text='live']"},
+           ^^^^^^^^
+NameError: name 'AppiumBy' is not defined
+2026-04-23 11:46:42,322 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 11:46:42,322 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:46:43,005 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:46:43,005 - [INFO] Resting for 30s before next account...
+2026-04-23 11:47:13,007 - [INFO] Running account: user1
+2026-04-23 11:47:13,008 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:47:17,414 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:47:17,415 - [TRACE] Sleeping for 8.61 seconds...
+2026-04-23 11:47:26,054 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:47:28,211 - [SUCCESS] [METRIC] Found in 1.49s | Fallbacks: 0 | Avg: 1.49s
+2026-04-23 11:47:28,211 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:47:28,212 - [ERROR] [user1] Encountered fatal error during cycle: name 'AppiumBy' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 175, in select_eligible_match
+    {"by": AppiumBy.XPATH, "value": "//*[@text='LIVE' or @text='Live' or @text='live']"},
+           ^^^^^^^^
+NameError: name 'AppiumBy' is not defined
+2026-04-23 11:47:28,214 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 11:47:28,215 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:47:28,928 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:47:28,929 - [INFO] Resting for 30s before next account...
+2026-04-23 11:47:58,930 - [INFO] Running account: user1
+2026-04-23 11:47:58,931 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:48:03,429 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:48:03,430 - [TRACE] Sleeping for 4.19 seconds...
+2026-04-23 11:48:07,656 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:48:10,604 - [SUCCESS] [METRIC] Found in 2.80s | Fallbacks: 0 | Avg: 2.80s
+2026-04-23 11:48:10,605 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:48:10,605 - [ERROR] [user1] Encountered fatal error during cycle: name 'AppiumBy' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 175, in select_eligible_match
+    {"by": AppiumBy.XPATH, "value": "//*[@text='LIVE' or @text='Live' or @text='live']"},
+           ^^^^^^^^
+NameError: name 'AppiumBy' is not defined
+2026-04-23 11:48:10,608 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 11:48:10,608 - [ERROR] Account user1 temporarily disabled
+2026-04-23 11:48:10,609 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:48:11,325 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:48:11,326 - [INFO] Resting for 30s before next account...
+2026-04-23 11:48:41,327 - [WARNING] All accounts have failed or hit limits. Stopping scheduler.
+2026-04-23 11:48:41,327 - [INFO] Bot execution terminated.
+2026-04-23 11:52:31,361 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 11:52:31,361 - [INFO] Execution Mode: sequential
+2026-04-23 11:52:31,362 - [INFO] Loaded 1 accounts.
+2026-04-23 11:52:31,363 - [INFO] Starting execution pool.
+2026-04-23 11:52:31,364 - [INFO] Running account: user1
+2026-04-23 11:52:31,364 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:52:36,323 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:52:36,324 - [TRACE] Sleeping for 6.50 seconds...
+2026-04-23 11:52:42,939 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:52:45,748 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:52:45,748 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 11:52:47,925 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:52:47,926 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:52:50,926 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:52:52,836 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:52:52,837 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:52:55,450 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:52:56,893 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:52:56,893 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 11:52:59,069 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:52:59,070 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:53:01,909 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:53:01,909 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:53:04,865 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:53:04,866 - [INFO] Checking for eligible Basketball matches...
+2026-04-23 11:53:10,151 - [SUCCESS] [METRIC] Found in 4.31s | Fallbacks: 0 | Avg: 4.31s
+2026-04-23 11:53:10,151 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:53:14,495 - [SUCCESS] [METRIC] Found in 2.54s | Fallbacks: 0 | Avg: 3.42s
+2026-04-23 11:53:14,910 - [TRACE] Sleeping for 3.24 seconds...
+2026-04-23 11:53:19,162 - [INFO] Found 0 potential matches in Basketball LIVE list.
+2026-04-23 11:53:19,162 - [INFO] Checking for eligible Baseball matches...
+2026-04-23 11:53:21,360 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:53:21,361 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 11:53:23,608 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:53:23,608 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 11:53:25,752 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:53:25,752 - [INFO] Checking for eligible Cricket matches...
+2026-04-23 11:53:27,780 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:53:27,781 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:53:29,937 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:53:29,937 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:53:32,109 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:53:32,116 - [ERROR] No eligible professional matches found in any allowed category.
+2026-04-23 11:53:32,116 - [ERROR] [user1] Could not find an eligible match. Ending cycle.
+2026-04-23 11:53:32,117 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:53:32,797 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:53:32,798 - [INFO] Resting for 30s before next account...
+2026-04-23 11:54:02,799 - [INFO] Running account: user1
+2026-04-23 11:54:02,799 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:54:10,934 - [ERROR] [user1] Failed to start Appium session: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\session_manager.py", line 51, in start_session
+    driver = webdriver.Remote(server_url, options=options)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 229, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options=options,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 208, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 321, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\poolmanager.py", line 457, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-23 11:54:11,020 - [WARNING] [user1] Driver failed to start. Recording failure.
+2026-04-23 11:54:11,021 - [INFO] Running account: user1
+2026-04-23 11:54:11,021 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:54:13,056 - [INFO] Bot manually stopped by user.
+2026-04-23 11:54:13,057 - [INFO] Bot execution terminated.
+2026-04-23 11:54:31,454 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 11:54:31,455 - [INFO] Execution Mode: sequential
+2026-04-23 11:54:31,456 - [INFO] Loaded 1 accounts.
+2026-04-23 11:54:31,457 - [INFO] Starting execution pool.
+2026-04-23 11:54:31,458 - [INFO] Running account: user1
+2026-04-23 11:54:31,458 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:54:36,384 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:54:36,384 - [TRACE] Sleeping for 10.23 seconds...
+2026-04-23 11:54:46,651 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:54:48,215 - [SUCCESS] [METRIC] Found in 1.33s | Fallbacks: 0 | Avg: 1.33s
+2026-04-23 11:54:48,216 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:54:50,256 - [SUCCESS] [METRIC] Found in 0.65s | Fallbacks: 0 | Avg: 0.99s
+2026-04-23 11:54:51,323 - [TRACE] Sleeping for 3.52 seconds...
+2026-04-23 11:54:56,293 - [INFO] Found 0 potential matches in Football LIVE list.
+2026-04-23 11:54:56,293 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 11:54:58,506 - [SUCCESS] [METRIC] Found in 0.70s | Fallbacks: 0 | Avg: 0.89s
+2026-04-23 11:54:58,506 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:55:02,771 - [SUCCESS] [METRIC] Found in 2.68s | Fallbacks: 0 | Avg: 1.34s
+2026-04-23 11:55:02,872 - [TRACE] Sleeping for 3.07 seconds...
+2026-04-23 11:55:06,277 - [INFO] Found 0 potential matches in Tennis LIVE list.
+2026-04-23 11:55:06,278 - [INFO] Checking for eligible Basketball matches...
+2026-04-23 11:55:08,780 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:55:08,780 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 11:55:10,974 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:55:10,975 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 11:55:13,281 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:55:13,281 - [INFO] Checking for eligible Baseball matches...
+2026-04-23 11:55:15,511 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:55:15,512 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 11:55:17,666 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:55:17,667 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 11:55:19,846 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:55:19,847 - [INFO] Checking for eligible Cricket matches...
+2026-04-23 11:55:22,035 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:55:22,036 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:55:24,201 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:55:24,201 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:55:26,352 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:55:26,359 - [ERROR] No eligible professional matches found in any allowed category.
+2026-04-23 11:55:26,362 - [ERROR] [user1] Could not find an eligible match. Ending cycle.
+2026-04-23 11:55:26,362 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:55:27,044 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:55:27,044 - [INFO] Resting for 30s before next account...
+2026-04-23 11:55:57,046 - [INFO] Running account: user1
+2026-04-23 11:55:57,047 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:56:01,599 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:56:01,599 - [TRACE] Sleeping for 8.90 seconds...
+2026-04-23 11:56:10,531 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:56:12,581 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:56:12,582 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 11:56:14,970 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:56:14,971 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:56:17,687 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:56:19,192 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:56:19,192 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:56:21,389 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:56:22,908 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:56:22,908 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 11:56:25,269 - [SUCCESS] [METRIC] Found in 0.66s | Fallbacks: 0 | Avg: 0.66s
+2026-04-23 11:56:25,270 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:56:30,620 - [WARNING] Element not found, skipping click. (//*[@text='LIVE' or @text='Live' or contains(@content-desc, 'Live')])
+2026-04-23 11:56:32,724 - [TRACE] Sleeping for 3.59 seconds...
+2026-04-23 11:56:38,176 - [INFO] Found 0 potential matches in Tennis LIVE list.
+2026-04-23 11:56:38,177 - [INFO] Checking for eligible Basketball matches...
+2026-04-23 11:56:41,951 - [SUCCESS] [METRIC] Found in 3.69s | Fallbacks: 0 | Avg: 2.18s
+2026-04-23 11:56:41,952 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:56:45,252 - [SUCCESS] [METRIC] Found in 2.59s | Fallbacks: 2 | Avg: 2.31s
+2026-04-23 11:56:46,374 - [TRACE] Sleeping for 3.52 seconds...
+2026-04-23 11:56:50,677 - [INFO] Found 0 potential matches in Basketball LIVE list.
+2026-04-23 11:56:50,678 - [INFO] Checking for eligible Baseball matches...
+2026-04-23 11:56:51,943 - [SUCCESS] [METRIC] Found in 0.44s | Fallbacks: 0 | Avg: 1.84s
+2026-04-23 11:56:51,944 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:56:55,729 - [SUCCESS] [METRIC] Found in 3.00s | Fallbacks: 0 | Avg: 2.07s
+2026-04-23 11:56:55,951 - [TRACE] Sleeping for 3.49 seconds...
+2026-04-23 11:57:01,245 - [INFO] Found 0 potential matches in Baseball LIVE list.
+2026-04-23 11:57:01,246 - [INFO] Checking for eligible Cricket matches...
+2026-04-23 11:57:04,968 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:57:04,968 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:57:07,517 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:57:07,518 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:57:10,402 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:57:10,420 - [ERROR] No eligible professional matches found in any allowed category.
+2026-04-23 11:57:10,422 - [ERROR] [user1] Could not find an eligible match. Ending cycle.
+2026-04-23 11:57:10,422 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:57:11,141 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:57:11,141 - [INFO] Resting for 30s before next account...
+2026-04-23 11:57:17,062 - [INFO] Bot manually stopped by user.
+2026-04-23 11:57:17,063 - [INFO] Bot execution terminated.
+2026-04-23 11:58:11,243 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 11:58:11,259 - [INFO] Execution Mode: sequential
+2026-04-23 11:58:11,261 - [INFO] Loaded 1 accounts.
+2026-04-23 11:58:11,296 - [INFO] Starting execution pool.
+2026-04-23 11:58:11,341 - [INFO] Running account: user1
+2026-04-23 11:58:11,365 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:58:16,148 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:58:16,149 - [TRACE] Sleeping for 6.13 seconds...
+2026-04-23 11:58:22,347 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:58:25,141 - [SUCCESS] [METRIC] Found in 2.07s | Fallbacks: 0 | Avg: 2.07s
+2026-04-23 11:58:25,141 - [INFO] Enforcing LIVE filter...
+2026-04-23 11:58:29,299 - [SUCCESS] [METRIC] Found in 0.98s | Fallbacks: 0 | Avg: 1.52s
+2026-04-23 11:58:30,195 - [TRACE] Sleeping for 2.10 seconds...
+2026-04-23 11:58:34,022 - [INFO] Found 0 potential matches in Football LIVE list.
+2026-04-23 11:58:34,022 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 11:58:36,453 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:58:36,453 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:58:38,716 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:58:38,716 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:58:40,885 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:58:40,885 - [INFO] Checking for eligible Basketball matches...
+2026-04-23 11:58:43,495 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:58:43,496 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 11:58:45,673 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:58:45,673 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 11:58:47,871 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 11:58:47,872 - [INFO] Checking for eligible Baseball matches...
+2026-04-23 11:58:50,065 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:58:50,066 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 11:58:52,207 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:58:52,208 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 11:58:54,781 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 11:58:54,781 - [INFO] Checking for eligible Cricket matches...
+2026-04-23 11:58:56,952 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:58:56,953 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:58:58,957 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:58:58,957 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 11:59:01,166 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 11:59:01,173 - [ERROR] No eligible professional matches found in any allowed category.
+2026-04-23 11:59:01,173 - [ERROR] [user1] Could not find an eligible match. Ending cycle.
+2026-04-23 11:59:01,173 - [INFO] [user1] Closing session cleanly...
+2026-04-23 11:59:02,089 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 11:59:02,089 - [INFO] Resting for 30s before next account...
+2026-04-23 11:59:32,091 - [INFO] Running account: user1
+2026-04-23 11:59:32,092 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 11:59:36,580 - [INFO] [user1] Connected to device successfully.
+2026-04-23 11:59:36,581 - [TRACE] Sleeping for 3.62 seconds...
+2026-04-23 11:59:40,229 - [INFO] Checking for eligible Football matches...
+2026-04-23 11:59:42,280 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:59:42,281 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 11:59:44,883 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:59:44,883 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:59:47,050 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:59:48,511 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:59:48,512 - [DEBUG] Football not visible. Swiping category bar...
+2026-04-23 11:59:50,726 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 11:59:52,038 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 11:59:52,039 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 11:59:54,138 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:59:54,139 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:59:56,229 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:59:56,230 - [DEBUG] Tennis not visible. Swiping category bar...
+2026-04-23 11:59:58,366 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 11:59:58,367 - [INFO] Checking for eligible Basketball matches...
+2026-04-23 12:00:00,988 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 12:00:00,989 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 12:00:03,814 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 12:00:03,815 - [DEBUG] Basketball not visible. Swiping category bar...
+2026-04-23 12:00:07,132 - [WARNING] Element not found, skipping click. (//*[@text='Basketball' or contains(@content-desc, 'Basketball') or contains(@text, 'Basketball')])
+2026-04-23 12:00:07,133 - [INFO] Checking for eligible Baseball matches...
+2026-04-23 12:00:09,253 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 12:00:09,254 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 12:00:11,447 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 12:00:11,448 - [DEBUG] Baseball not visible. Swiping category bar...
+2026-04-23 12:00:13,528 - [WARNING] Element not found, skipping click. (//*[@text='Baseball' or contains(@content-desc, 'Baseball') or contains(@text, 'Baseball')])
+2026-04-23 12:00:13,530 - [INFO] Checking for eligible Cricket matches...
+2026-04-23 12:00:15,746 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 12:00:15,747 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 12:00:17,821 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 12:00:17,821 - [DEBUG] Cricket not visible. Swiping category bar...
+2026-04-23 12:00:19,896 - [WARNING] Element not found, skipping click. (//*[@text='Cricket' or contains(@content-desc, 'Cricket') or contains(@text, 'Cricket')])
+2026-04-23 12:00:19,903 - [ERROR] No eligible professional matches found in any allowed category.
+2026-04-23 12:00:19,903 - [ERROR] [user1] Could not find an eligible match. Ending cycle.
+2026-04-23 12:00:19,903 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:00:20,600 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:00:20,600 - [INFO] Resting for 30s before next account...
+2026-04-23 12:00:50,602 - [INFO] Running account: user1
+2026-04-23 12:00:50,603 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:00:58,692 - [ERROR] [user1] Failed to start Appium session: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\session_manager.py", line 51, in start_session
+    driver = webdriver.Remote(server_url, options=options)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 229, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options=options,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 208, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 321, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\poolmanager.py", line 457, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-23 12:00:58,712 - [WARNING] [user1] Driver failed to start. Recording failure.
+2026-04-23 12:00:58,713 - [INFO] Running account: user1
+2026-04-23 12:00:58,714 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:01:06,817 - [ERROR] [user1] Failed to start Appium session: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\session_manager.py", line 51, in start_session
+    driver = webdriver.Remote(server_url, options=options)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 229, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options=options,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 208, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 321, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\poolmanager.py", line 457, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-23 12:01:06,829 - [WARNING] [user1] Driver failed to start. Recording failure.
+2026-04-23 12:01:06,830 - [INFO] Running account: user1
+2026-04-23 12:01:06,831 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:01:14,925 - [ERROR] [user1] Failed to start Appium session: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 500, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\client.py", line 1353, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1113, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Python314\Lib\http\client.py", line 1057, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 331, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\session_manager.py", line 51, in start_session
+    driver = webdriver.Remote(server_url, options=options)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 229, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options=options,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 208, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 321, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 345, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 300, in execute
+    return self._request(command_info[0], url, body=data)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\remote_connection.py", line 321, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ~~~~~~~~~~~~~~~~~~~~~~~~^
+        method, url, fields=fields, headers=headers, **urlopen_kw
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\poolmanager.py", line 457, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<13 lines>...
+        **response_kw,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\urllib3\util\retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /session (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=4723): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-04-23 12:01:14,939 - [WARNING] [user1] Driver failed to start. Recording failure.
+2026-04-23 12:01:14,939 - [ERROR] Account user1 temporarily disabled
+2026-04-23 12:01:14,940 - [WARNING] All accounts have failed or hit limits. Stopping scheduler.
+2026-04-23 12:01:14,940 - [INFO] Bot execution terminated.
+2026-04-23 12:15:18,888 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 12:15:18,889 - [INFO] Execution Mode: sequential
+2026-04-23 12:15:18,890 - [INFO] Loaded 1 accounts.
+2026-04-23 12:15:18,892 - [INFO] Starting execution pool.
+2026-04-23 12:15:18,893 - [INFO] Running account: user1
+2026-04-23 12:15:18,893 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:15:23,770 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:15:23,770 - [TRACE] Sleeping for 5.61 seconds...
+2026-04-23 12:15:29,424 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:15:33,396 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:15:35,290 - [SUCCESS] [METRIC] Found in 1.18s | Fallbacks: 0 | Avg: 1.18s
+2026-04-23 12:15:35,291 - [INFO] Checking LIVE filter state...
+2026-04-23 12:15:36,599 - [SUCCESS] [METRIC] Found in 1.30s | Fallbacks: 0 | Avg: 1.24s
+2026-04-23 12:15:36,665 - [INFO] Activating LIVE filter...
+2026-04-23 12:15:37,279 - [TRACE] Sleeping for 2.42 seconds...
+2026-04-23 12:15:40,192 - [INFO] Found 6 potential matches in Football LIVE list.
+2026-04-23 12:15:40,617 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:15:42,576 - [TRACE] Sleeping for 4.89 seconds...
+2026-04-23 12:15:47,477 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:15:47,477 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:15:51,750 - [WARNING] Element not found, skipping click. (com.sofascore.results:id/multiStateFab)
+2026-04-23 12:15:51,751 - [ERROR] [user1] Failed to open discussion panel. Match might not have comments enabled.
+2026-04-23 12:15:51,751 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:15:52,488 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:15:52,489 - [INFO] Resting for 30s before next account...
+2026-04-23 12:16:22,490 - [INFO] Running account: user1
+2026-04-23 12:16:22,491 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:16:27,064 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:16:27,065 - [TRACE] Sleeping for 6.51 seconds...
+2026-04-23 12:16:33,624 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:16:37,892 - [ERROR] [user1] Encountered fatal error during cycle: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 149, in select_eligible_match
+    self.driver.swipe(size['width']*0.2, size['height']*0.15, size['width']*0.8, size['height']*0.15, 1000)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\extensions\action_helpers.py", line 158, in swipe
+    actions.perform()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.InvalidElementStateException: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+
+2026-04-23 12:16:37,904 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 12:16:37,905 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:16:38,576 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:16:38,577 - [INFO] Resting for 30s before next account...
+2026-04-23 12:17:08,579 - [INFO] Running account: user1
+2026-04-23 12:17:08,579 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:17:13,007 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:17:13,008 - [TRACE] Sleeping for 7.00 seconds...
+2026-04-23 12:17:20,054 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:17:24,054 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:17:25,573 - [SUCCESS] [METRIC] Found in 1.39s | Fallbacks: 0 | Avg: 1.39s
+2026-04-23 12:17:25,573 - [INFO] Checking LIVE filter state...
+2026-04-23 12:17:27,480 - [SUCCESS] [METRIC] Found in 1.90s | Fallbacks: 0 | Avg: 1.64s
+2026-04-23 12:17:27,529 - [INFO] Activating LIVE filter...
+2026-04-23 12:17:29,951 - [TRACE] Sleeping for 2.13 seconds...
+2026-04-23 12:17:33,566 - [INFO] Found 8 potential matches in Football LIVE list.
+2026-04-23 12:17:33,629 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:17:36,230 - [TRACE] Sleeping for 4.58 seconds...
+2026-04-23 12:17:40,815 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:17:40,815 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:17:46,380 - [WARNING] Element not found, skipping click. (com.sofascore.results:id/multiStateFab)
+2026-04-23 12:17:46,381 - [ERROR] [user1] Failed to open discussion panel. Match might not have comments enabled.
+2026-04-23 12:17:46,381 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:17:47,044 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:17:47,045 - [INFO] Resting for 30s before next account...
+2026-04-23 12:18:17,046 - [INFO] Running account: user1
+2026-04-23 12:18:17,046 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:18:21,609 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:18:21,609 - [TRACE] Sleeping for 5.11 seconds...
+2026-04-23 12:18:26,743 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:18:30,729 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:18:35,004 - [SUCCESS] [METRIC] Found in 1.30s | Fallbacks: 0 | Avg: 1.30s
+2026-04-23 12:18:35,005 - [INFO] Checking LIVE filter state...
+2026-04-23 12:18:40,806 - [WARNING] Element not found, skipping. (//*[@text='Live' or @text='LIVE'])
+2026-04-23 12:18:41,542 - [ERROR] [user1] Encountered fatal error during cycle: Message: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: Could not proxy command to the remote server. Original error: socket hang up
+    at ProxyRequestError.getActualError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\errors.js:692:16)
+    at UIA2Proxy.proxyReqRes (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\jsonwp-proxy\proxy.js:330:149)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 202, in select_eligible_match
+    # Refresh UI Cache
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 448, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.WebDriverException: Message: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: Could not proxy command to the remote server. Original error: socket hang up
+    at ProxyRequestError.getActualError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\errors.js:692:16)
+    at UIA2Proxy.proxyReqRes (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\jsonwp-proxy\proxy.js:330:149)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-23 12:18:41,547 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 12:18:41,547 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:18:41,553 - [WARNING] [user1] Error quitting driver: Message: A session is either terminated or not started
+Stacktrace:
+NoSuchDriverError: A session is either terminated or not started
+    at asyncHandler (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\protocol.js:293:23)
+    at C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\protocol.js:447:36
+    at Layer.handleRequest (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:295:15
+    at param (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:600:14)
+    at param (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:610:14)
+    at processParams (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:664:3)
+    at next (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:291:5)
+    at logger (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\morgan\index.js:144:5)
+    at Layer.handleRequest (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:342:13)
+    at C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:297:9
+    at processParams (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:582:12)
+    at next (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:291:5)
+    at read (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\read.js:53:5)
+    at jsonParser (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\body-parser\lib\types\json.js:88:5)
+    at Layer.handleRequest (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\lib\layer.js:152:17)
+    at trimPrefix (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\router\index.js:342:13)
+2026-04-23 12:18:41,554 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:18:41,555 - [INFO] Resting for 30s before next account...
+2026-04-23 12:18:55,993 - [INFO] Bot manually stopped by user.
+2026-04-23 12:18:55,993 - [INFO] Bot execution terminated.
+2026-04-23 12:22:34,539 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 12:22:34,540 - [INFO] Execution Mode: sequential
+2026-04-23 12:22:34,541 - [INFO] Loaded 1 accounts.
+2026-04-23 12:22:34,542 - [INFO] Starting execution pool.
+2026-04-23 12:22:34,543 - [INFO] Running account: user1
+2026-04-23 12:22:34,543 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:22:39,474 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:22:39,474 - [TRACE] Sleeping for 10.94 seconds...
+2026-04-23 12:22:50,444 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:22:55,909 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:22:57,654 - [SUCCESS] [METRIC] Found in 1.63s | Fallbacks: 0 | Avg: 1.63s
+2026-04-23 12:22:57,654 - [INFO] Checking LIVE filter state...
+2026-04-23 12:22:58,514 - [SUCCESS] [METRIC] Found in 0.85s | Fallbacks: 0 | Avg: 1.24s
+2026-04-23 12:22:59,205 - [INFO] Activating LIVE filter...
+2026-04-23 12:23:00,630 - [TRACE] Sleeping for 2.82 seconds...
+2026-04-23 12:23:04,122 - [INFO] Found 7 potential matches in Football LIVE list.
+2026-04-23 12:23:04,343 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:23:06,364 - [TRACE] Sleeping for 3.94 seconds...
+2026-04-23 12:23:10,315 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:23:10,316 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:23:13,397 - [SUCCESS] [METRIC] Found in 2.30s | Fallbacks: 2 | Avg: 1.59s
+2026-04-23 12:23:13,398 - [TRACE] Sleeping for 3.61 seconds...
+2026-04-23 12:23:17,010 - [TRACE] Simulating human behavior...
+2026-04-23 12:23:17,653 - [TRACE] Sleeping for 1.14 seconds...
+2026-04-23 12:23:18,797 - [INFO] [user1] Polling match state for an event...
+2026-04-23 12:23:20,510 - [SUCCESS] [METRIC] Found in 1.70s | Fallbacks: 2 | Avg: 1.62s
+2026-04-23 12:23:26,146 - [WARNING] Element not found, skipping. (com.sofascore.results:id/time_text)
+2026-04-23 12:23:26,467 - [INFO] Current State -> Score:  | Time: None
+2026-04-23 12:23:26,470 - [DEBUG] [user1] No event detected (Attempt 1/3). Sleeping 15s.
+2026-04-23 12:23:42,067 - [SUCCESS] [METRIC] Found in 0.59s | Fallbacks: 0 | Avg: 1.41s
+2026-04-23 12:23:48,015 - [WARNING] Element not found, skipping. (com.sofascore.results:id/time_text)
+2026-04-23 12:23:48,323 - [INFO] Current State -> Score:  | Time: None
+2026-04-23 12:23:48,324 - [DEBUG] [user1] No event detected (Attempt 2/3). Sleeping 15s.
+2026-04-23 12:24:03,567 - [SUCCESS] [METRIC] Found in 0.24s | Fallbacks: 0 | Avg: 1.22s
+2026-04-23 12:24:09,015 - [WARNING] Element not found, skipping. (com.sofascore.results:id/time_text)
+2026-04-23 12:24:09,307 - [INFO] Current State -> Score:  | Time: None
+2026-04-23 12:24:09,308 - [DEBUG] [user1] No event detected (Attempt 3/3). Sleeping 15s.
+2026-04-23 12:24:24,309 - [INFO] [user1] Account cycle finished.
+2026-04-23 12:24:24,309 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:24:24,985 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:24:24,985 - [INFO] Resting for 30s before next account...
+2026-04-23 12:24:54,987 - [INFO] Running account: user1
+2026-04-23 12:24:54,987 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:24:59,380 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:24:59,381 - [TRACE] Sleeping for 4.74 seconds...
+2026-04-23 12:25:04,157 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:25:05,724 - [ERROR] [user1] Encountered fatal error during cycle: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 149, in select_eligible_match
+    self.driver.swipe(size['width']*0.2, size['height']*0.15, size['width']*0.8, size['height']*0.15, 1000)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\extensions\action_helpers.py", line 158, in swipe
+    actions.perform()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.InvalidElementStateException: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+
+2026-04-23 12:25:05,733 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 12:25:05,733 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:25:06,391 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:25:06,392 - [INFO] Resting for 30s before next account...
+2026-04-23 12:25:36,393 - [INFO] Running account: user1
+2026-04-23 12:25:36,393 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:25:56,565 - [ERROR] [user1] Failed to start Appium session: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\errors.js:824:36)
+    at asyncHandler (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\system-calls.js:360:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\build\lib\commands\device\common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:211:38)
+    at async AppiumDriver.createSession (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:324:43)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\session_manager.py", line 51, in start_session
+    driver = webdriver.Remote(server_url, options=options)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 229, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options=options,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 208, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 321, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\errors.js:824:36)
+    at asyncHandler (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\system-calls.js:360:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\build\lib\commands\device\common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:211:38)
+    at async AppiumDriver.createSession (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:324:43)
+2026-04-23 12:25:56,601 - [WARNING] [user1] Driver failed to start. Recording failure.
+2026-04-23 12:25:56,602 - [INFO] Running account: user1
+2026-04-23 12:25:56,602 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:26:16,814 - [ERROR] [user1] Failed to start Appium session: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\errors.js:824:36)
+    at asyncHandler (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\system-calls.js:360:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\build\lib\commands\device\common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:211:38)
+    at async AppiumDriver.createSession (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:324:43)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\session_manager.py", line 51, in start_session
+    driver = webdriver.Remote(server_url, options=options)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 229, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        command_executor=command_executor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options=options,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 208, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\webdriver.py", line 321, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, w3c_caps)
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\errors.js:824:36)
+    at asyncHandler (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\system-calls.js:360:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\build\lib\commands\device\common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:211:38)
+    at async AppiumDriver.createSession (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:324:43)
+2026-04-23 12:26:16,818 - [WARNING] [user1] Driver failed to start. Recording failure.
+2026-04-23 12:26:16,819 - [ERROR] Account user1 temporarily disabled
+2026-04-23 12:26:16,819 - [WARNING] All accounts have failed or hit limits. Stopping scheduler.
+2026-04-23 12:26:16,820 - [INFO] Bot execution terminated.
+2026-04-23 12:28:32,409 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 12:28:32,409 - [INFO] Execution Mode: sequential
+2026-04-23 12:28:32,410 - [INFO] Loaded 1 accounts.
+2026-04-23 12:28:32,412 - [INFO] Starting execution pool.
+2026-04-23 12:28:32,412 - [INFO] Running account: user1
+2026-04-23 12:28:32,412 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:28:37,146 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:28:37,147 - [TRACE] Sleeping for 7.28 seconds...
+2026-04-23 12:28:44,461 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:28:49,915 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:28:50,833 - [SUCCESS] [METRIC] Found in 0.84s | Fallbacks: 0 | Avg: 0.84s
+2026-04-23 12:28:50,834 - [INFO] Checking LIVE filter state...
+2026-04-23 12:28:51,363 - [SUCCESS] [METRIC] Found in 0.52s | Fallbacks: 0 | Avg: 0.68s
+2026-04-23 12:28:51,415 - [INFO] Activating LIVE filter...
+2026-04-23 12:28:52,528 - [TRACE] Sleeping for 3.28 seconds...
+2026-04-23 12:28:56,372 - [INFO] Found 7 potential matches in Football LIVE list.
+2026-04-23 12:28:56,437 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:28:58,445 - [TRACE] Sleeping for 3.80 seconds...
+2026-04-23 12:29:02,262 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:29:02,263 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:29:04,541 - [SUCCESS] [METRIC] Found in 2.14s | Fallbacks: 2 | Avg: 1.17s
+2026-04-23 12:29:04,542 - [TRACE] Sleeping for 3.28 seconds...
+2026-04-23 12:29:07,825 - [TRACE] Simulating human behavior...
+2026-04-23 12:29:08,431 - [TRACE] Sleeping for 0.55 seconds...
+2026-04-23 12:29:08,982 - [INFO] [user1] Polling match state for an event...
+2026-04-23 12:29:08,983 - [INFO] [user1] Initial entry detected. Proceeding with first post...
+2026-04-23 12:29:08,983 - [INFO] [user1] Event detected. Preparing to comment...
+2026-04-23 12:29:08,984 - [TRACE] Simulating human behavior...
+2026-04-23 12:29:09,569 - [TRACE] Sleeping for 1.38 seconds...
+2026-04-23 12:29:10,951 - [INFO] Posting comment: 'I expected more goals by now.'
+2026-04-23 12:29:11,709 - [SUCCESS] [METRIC] Found in 0.75s | Fallbacks: 2 | Avg: 1.06s
+2026-04-23 12:29:13,769 - [TRACE] Sleeping for 0.89 seconds...
+2026-04-23 12:29:17,479 - [SUCCESS] [METRIC] Found in 0.41s | Fallbacks: 0 | Avg: 0.93s
+2026-04-23 12:29:21,055 - [WARNING] Element not found, skipping click. (com.sofascore.results:id/button_send_comment)
+2026-04-23 12:29:21,055 - [ERROR] Failed to click Send button.
+2026-04-23 12:29:21,056 - [ERROR] [user1] Failed to post comment.
+2026-04-23 12:29:21,056 - [INFO] [user1] Account cycle finished.
+2026-04-23 12:29:21,057 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:29:21,891 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:29:21,891 - [INFO] Resting for 30s before next account...
+2026-04-23 12:29:39,396 - [INFO] Bot manually stopped by user.
+2026-04-23 12:29:39,397 - [INFO] Bot execution terminated.
+2026-04-23 12:32:24,523 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 12:32:24,548 - [INFO] Execution Mode: sequential
+2026-04-23 12:32:24,549 - [INFO] Loaded 1 accounts.
+2026-04-23 12:32:24,550 - [INFO] Starting execution pool.
+2026-04-23 12:32:24,551 - [INFO] Running account: user1
+2026-04-23 12:32:24,551 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:32:29,248 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:32:29,249 - [TRACE] Sleeping for 9.80 seconds...
+2026-04-23 12:32:39,081 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:32:44,523 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:32:45,409 - [SUCCESS] [METRIC] Found in 0.81s | Fallbacks: 0 | Avg: 0.81s
+2026-04-23 12:32:45,409 - [INFO] Checking LIVE filter state...
+2026-04-23 12:32:45,870 - [SUCCESS] [METRIC] Found in 0.45s | Fallbacks: 0 | Avg: 0.63s
+2026-04-23 12:32:45,925 - [INFO] Activating LIVE filter...
+2026-04-23 12:32:47,030 - [TRACE] Sleeping for 3.99 seconds...
+2026-04-23 12:32:51,808 - [INFO] Found 6 potential matches in Football LIVE list.
+2026-04-23 12:32:52,001 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:32:54,813 - [TRACE] Sleeping for 4.84 seconds...
+2026-04-23 12:32:59,656 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:32:59,657 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:33:02,952 - [SUCCESS] [METRIC] Found in 2.55s | Fallbacks: 2 | Avg: 1.27s
+2026-04-23 12:33:02,953 - [TRACE] Sleeping for 3.54 seconds...
+2026-04-23 12:33:06,497 - [TRACE] Simulating human behavior...
+2026-04-23 12:33:06,526 - [TRACE] Sleeping for 1.01 seconds...
+2026-04-23 12:33:07,536 - [INFO] [user1] Polling match state for an event...
+2026-04-23 12:33:07,537 - [INFO] [user1] Initial entry detected. Proceeding with first post...
+2026-04-23 12:33:07,538 - [WARNING] [user1] Skipped action (anti-ban)
+2026-04-23 12:33:10,452 - [INFO] [user1] Account cycle finished.
+2026-04-23 12:33:10,453 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:33:11,282 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:33:11,282 - [INFO] Resting for 30s before next account...
+2026-04-23 12:33:41,283 - [INFO] Running account: user1
+2026-04-23 12:33:41,284 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:33:45,697 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:33:45,697 - [TRACE] Sleeping for 9.31 seconds...
+2026-04-23 12:33:55,031 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:34:00,966 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:34:03,110 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:34:03,111 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 12:34:05,526 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:34:05,526 - [DEBUG] Football not visible. Swiping category bar right...
+2026-04-23 12:34:08,477 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:34:10,469 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:34:13,372 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:34:14,508 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:34:14,515 - [ERROR] [user1] Encountered fatal error during cycle: Message: 'POST /actions' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /actions' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\jsonwp-proxy\proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.performActions (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\actions.js:62:5)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 171, in select_eligible_match
+    self.driver.swipe(size['width']*0.8, size['height']*0.15, size['width']*0.2, size['height']*0.15, 1000)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\extensions\action_helpers.py", line 158, in swipe
+    actions.perform()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.WebDriverException: Message: 'POST /actions' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /actions' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\jsonwp-proxy\proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.performActions (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\actions.js:62:5)
+2026-04-23 12:34:14,524 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 12:34:14,525 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:34:34,907 - [INFO] Bot manually stopped by user.
+2026-04-23 12:34:34,908 - [INFO] Bot execution terminated.
+2026-04-23 12:39:34,431 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 12:39:34,432 - [INFO] Execution Mode: sequential
+2026-04-23 12:39:34,433 - [INFO] Loaded 1 accounts.
+2026-04-23 12:39:34,434 - [INFO] Starting execution pool.
+2026-04-23 12:39:34,434 - [INFO] Running account: user1
+2026-04-23 12:39:34,435 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:39:39,197 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:39:39,198 - [TRACE] Sleeping for 7.86 seconds...
+2026-04-23 12:39:47,094 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:39:52,558 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:39:54,779 - [SUCCESS] [METRIC] Found in 2.10s | Fallbacks: 0 | Avg: 2.10s
+2026-04-23 12:39:54,779 - [INFO] Checking LIVE filter state...
+2026-04-23 12:39:55,268 - [SUCCESS] [METRIC] Found in 0.48s | Fallbacks: 0 | Avg: 1.29s
+2026-04-23 12:39:55,320 - [INFO] Activating LIVE filter...
+2026-04-23 12:39:55,785 - [TRACE] Sleeping for 2.05 seconds...
+2026-04-23 12:39:59,014 - [INFO] Found 6 potential matches in Football LIVE list.
+2026-04-23 12:39:59,495 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:40:01,470 - [TRACE] Sleeping for 4.60 seconds...
+2026-04-23 12:40:06,081 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:40:06,081 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:40:08,676 - [SUCCESS] [METRIC] Found in 2.47s | Fallbacks: 2 | Avg: 1.68s
+2026-04-23 12:40:08,701 - [TRACE] Sleeping for 2.19 seconds...
+2026-04-23 12:40:10,890 - [TRACE] Simulating human behavior...
+2026-04-23 12:40:11,555 - [TRACE] Sleeping for 0.54 seconds...
+2026-04-23 12:40:12,092 - [INFO] [user1] Polling match state for an event...
+2026-04-23 12:40:12,093 - [INFO] [user1] Initial entry detected. Proceeding with first post...
+2026-04-23 12:40:12,093 - [INFO] [user1] Event detected. Preparing to comment...
+2026-04-23 12:40:12,093 - [TRACE] Simulating human behavior...
+2026-04-23 12:40:12,678 - [TRACE] Sleeping for 1.08 seconds...
+2026-04-23 12:40:13,764 - [INFO] Posting comment: 'Great defending on that last play.'
+2026-04-23 12:40:13,973 - [SUCCESS] [METRIC] Found in 0.20s | Fallbacks: 2 | Avg: 1.31s
+2026-04-23 12:40:15,952 - [TRACE] Sleeping for 0.79 seconds...
+2026-04-23 12:40:19,633 - [SUCCESS] [METRIC] Found in 0.29s | Fallbacks: 0 | Avg: 1.11s
+2026-04-23 12:40:22,684 - [SUCCESS] [METRIC] Found in 0.88s | Fallbacks: 5 | Avg: 1.07s
+2026-04-23 12:40:22,685 - [TRACE] Verifying post...
+2026-04-23 12:40:26,123 - [WARNING] Element not found, skipping. (//*[contains(@text, 'Great defending on that last play.')])
+2026-04-23 12:40:26,530 - [SUCCESS] [METRIC] Found in 0.40s | Fallbacks: 0 | Avg: 0.97s
+2026-04-23 12:40:26,626 - [SUCCESS] Comment posted successfully (Input cleared)
+2026-04-23 12:40:26,626 - [SUCCESS] [user1] Comment sequence complete! Waiting 120s before tearing down session.
+2026-04-23 12:40:56,671 - [TRACE] [user1] Heartbeat sent to keep session alive during cooldown (30/120s)
+2026-04-23 12:41:26,713 - [TRACE] [user1] Heartbeat sent to keep session alive during cooldown (60/120s)
+2026-04-23 12:41:56,754 - [TRACE] [user1] Heartbeat sent to keep session alive during cooldown (90/120s)
+2026-04-23 12:42:26,796 - [TRACE] [user1] Heartbeat sent to keep session alive during cooldown (120/120s)
+2026-04-23 12:42:26,797 - [INFO] [user1] Account cycle finished.
+2026-04-23 12:42:26,797 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:42:27,504 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:42:27,504 - [INFO] Resting for 30s before next account...
+2026-04-23 12:42:57,506 - [INFO] Running account: user1
+2026-04-23 12:42:57,507 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:43:02,157 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:43:02,157 - [TRACE] Sleeping for 10.05 seconds...
+2026-04-23 12:43:12,244 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:43:18,221 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:43:20,432 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:43:20,433 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 12:43:22,949 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:43:22,950 - [DEBUG] Football not visible. Swiping category bar right...
+2026-04-23 12:43:25,387 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:43:26,427 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:43:29,242 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:43:30,394 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:43:33,182 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:43:35,210 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:43:35,211 - [DEBUG] Football not visible. Swiping category bar left...
+2026-04-23 12:43:38,029 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:43:39,217 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:43:42,198 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:43:44,232 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:43:47,007 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:43:48,172 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:43:48,173 - [INFO] Checking for eligible Tennis matches...
+2026-04-23 12:43:50,571 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 12:43:50,571 - [DEBUG] Tennis not visible. Swiping category bar right...
+2026-04-23 12:43:53,151 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 12:43:56,449 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 12:43:59,170 - [WARNING] Element not found, skipping click. (//*[@text='Tennis' or contains(@content-desc, 'Tennis') or contains(@text, 'Tennis')])
+2026-04-23 12:43:59,171 - [DEBUG] Tennis not visible. Swiping category bar left...
+2026-04-23 12:44:00,521 - [ERROR] [user1] Encountered fatal error during cycle: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 56, in run_sequential
+    self._run_account_cycle(username, driver, account)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\scheduler.py", line 83, in _run_account_cycle
+    if not navigator.select_eligible_match(match_filters):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\OneDrive\Desktop\SofaApp\core\navigation.py", line 173, in select_eligible_match
+    self.driver.swipe(size['width']*0.2, size['height']*0.15, size['width']*0.8, size['height']*0.15, 1000)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\extensions\action_helpers.py", line 158, in swipe
+    actions.perform()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\action_chains.py", line 94, in perform
+    self.w3c_actions.perform()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\common\actions\action_builder.py", line 96, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Roaming\Python\Python314\site-packages\appium\webdriver\errorhandler.py", line 125, in check_response
+    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
+selenium.common.exceptions.InvalidElementStateException: Message: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+Stacktrace:
+io.appium.uiautomator2.common.exceptions.InvalidElementStateException: Unable to perform W3C actions. Check the logcat output for possible error reports and make sure your input actions chain is valid.
+	at io.appium.uiautomator2.handler.W3CActions.safeHandle(W3CActions.java:82)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:267)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:261)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:293)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445)
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571)
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512)
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484)
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225)
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:919)
+
+2026-04-23 12:44:00,532 - [WARNING] [user1] Session crashed. Recording failure.
+2026-04-23 12:44:00,533 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:44:01,215 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:44:01,215 - [INFO] Resting for 30s before next account...
+2026-04-23 12:44:31,217 - [INFO] Running account: user1
+2026-04-23 12:44:31,217 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:44:35,781 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:44:35,782 - [TRACE] Sleeping for 5.67 seconds...
+2026-04-23 12:44:41,486 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:44:46,939 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:44:48,876 - [SUCCESS] [METRIC] Found in 1.79s | Fallbacks: 0 | Avg: 1.79s
+2026-04-23 12:44:48,876 - [INFO] Checking LIVE filter state...
+2026-04-23 12:44:49,883 - [SUCCESS] [METRIC] Found in 1.00s | Fallbacks: 0 | Avg: 1.40s
+2026-04-23 12:44:51,625 - [INFO] Activating LIVE filter...
+2026-04-23 12:44:53,627 - [TRACE] Sleeping for 2.97 seconds...
+2026-04-23 12:44:57,276 - [INFO] Found 6 potential matches in Football LIVE list.
+2026-04-23 12:44:57,357 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:44:59,282 - [TRACE] Sleeping for 3.25 seconds...
+2026-04-23 12:45:02,601 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:45:02,604 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:45:05,395 - [SUCCESS] [METRIC] Found in 2.68s | Fallbacks: 2 | Avg: 1.82s
+2026-04-23 12:45:05,395 - [TRACE] Sleeping for 3.89 seconds...
+2026-04-23 12:45:09,286 - [TRACE] Simulating human behavior...
+2026-04-23 12:45:09,916 - [TRACE] Sleeping for 0.90 seconds...
+2026-04-23 12:45:10,820 - [INFO] [user1] Polling match state for an event...
+2026-04-23 12:45:10,821 - [INFO] [user1] Initial entry detected. Proceeding with first post...
+2026-04-23 12:45:10,821 - [INFO] [user1] Event detected. Preparing to comment...
+2026-04-23 12:45:10,822 - [TRACE] Simulating human behavior...
+2026-04-23 12:45:10,842 - [TRACE] Sleeping for 1.66 seconds...
+2026-04-23 12:45:12,503 - [INFO] Posting comment: 'They really need a tactical change right now.'
+2026-04-23 12:45:13,409 - [SUCCESS] [METRIC] Found in 0.90s | Fallbacks: 2 | Avg: 1.59s
+2026-04-23 12:45:16,549 - [TRACE] Sleeping for 0.63 seconds...
+2026-04-23 12:45:20,384 - [SUCCESS] [METRIC] Found in 0.86s | Fallbacks: 0 | Avg: 1.45s
+2026-04-23 12:45:23,480 - [SUCCESS] [METRIC] Found in 1.59s | Fallbacks: 5 | Avg: 1.47s
+2026-04-23 12:45:23,481 - [TRACE] Verifying post...
+2026-04-23 12:45:26,379 - [SUCCESS] [METRIC] Found in 2.89s | Fallbacks: 0 | Avg: 1.67s
+2026-04-23 12:45:26,380 - [SUCCESS] Comment posted successfully
+2026-04-23 12:45:26,380 - [SUCCESS] [user1] Comment sequence complete! Waiting 120s before tearing down session.
+2026-04-23 12:45:56,386 - [WARNING] [user1] Heartbeat failed, session may be unstable: Message: 'GET /window/current/size' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /window/current/size' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\jsonwp-proxy\proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getWindowSize (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\viewport.js:73:13)
+    at async AndroidUiautomator2Driver.getWindowRect (C:\Users\Lenovo\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\viewport.js:53:31)
+2026-04-23 12:46:02,519 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:46:19,303 - [INFO] Bot manually stopped by user.
+2026-04-23 12:46:19,303 - [INFO] Bot execution terminated.
+2026-04-23 12:52:47,920 - [INFO] Bot started - Sofascore Automation System
+2026-04-23 12:52:47,920 - [INFO] Execution Mode: sequential
+2026-04-23 12:52:47,921 - [INFO] Loaded 1 accounts.
+2026-04-23 12:52:47,922 - [INFO] Starting execution pool.
+2026-04-23 12:52:47,923 - [INFO] Running account: user1
+2026-04-23 12:52:47,923 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:52:52,811 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:52:52,811 - [TRACE] Sleeping for 8.78 seconds...
+2026-04-23 12:53:01,638 - [DEBUG] Ensuring we are on the home screen...
+2026-04-23 12:53:03,220 - [WARNING] Element not found, skipping. (//*[@text='Football' or @text='SOCCER'])
+2026-04-23 12:53:05,685 - [WARNING] Element not found, skipping. (//*[@text='Football' or @text='SOCCER'])
+2026-04-23 12:53:08,472 - [WARNING] Element not found, skipping. (//*[@text='Football' or @text='SOCCER'])
+2026-04-23 12:53:09,566 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:53:15,069 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:53:17,575 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:53:17,576 - [INFO] Checking for eligible Soccer matches...
+2026-04-23 12:53:19,740 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:53:19,741 - [DEBUG] Football not visible. Swiping category bar right...
+2026-04-23 12:53:22,749 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:53:24,014 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:53:27,009 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:53:28,550 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:53:31,549 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:53:32,854 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:53:32,855 - [DEBUG] Football not visible. Swiping category bar left...
+2026-04-23 12:53:35,832 - [WARNING] Element not found, skipping click. (//*[@text='Football' or contains(@content-desc, 'Football') or contains(@text, 'Football')])
+2026-04-23 12:53:37,084 - [WARNING] Element not found, skipping click. (//*[@text='Soccer' or contains(@content-desc, 'Soccer') or contains(@text, 'Soccer')])
+2026-04-23 12:53:41,163 - [SUCCESS] [METRIC] Found in 2.68s | Fallbacks: 0 | Avg: 2.68s
+2026-04-23 12:53:41,163 - [INFO] Checking LIVE filter state...
+2026-04-23 12:53:42,648 - [SUCCESS] [METRIC] Found in 1.48s | Fallbacks: 0 | Avg: 2.08s
+2026-04-23 12:53:42,693 - [INFO] Activating LIVE filter...
+2026-04-23 12:53:44,447 - [TRACE] Sleeping for 2.80 seconds...
+2026-04-23 12:53:48,128 - [INFO] Found 8 potential matches in Football LIVE list.
+2026-04-23 12:53:49,164 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:53:51,948 - [TRACE] Sleeping for 3.84 seconds...
+2026-04-23 12:53:55,798 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:53:55,799 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:53:57,498 - [SUCCESS] [METRIC] Found in 1.60s | Fallbacks: 2 | Avg: 1.92s
+2026-04-23 12:53:57,498 - [TRACE] Sleeping for 2.75 seconds...
+2026-04-23 12:54:00,248 - [TRACE] Simulating human behavior...
+2026-04-23 12:54:00,865 - [TRACE] Sleeping for 0.65 seconds...
+2026-04-23 12:54:01,518 - [INFO] [user1] Polling match state for an event...
+2026-04-23 12:54:01,518 - [INFO] [user1] Initial entry detected. Proceeding with first post...
+2026-04-23 12:54:01,518 - [INFO] [user1] Event detected. Preparing to comment...
+2026-04-23 12:54:01,519 - [TRACE] Simulating human behavior...
+2026-04-23 12:54:01,540 - [TRACE] Sleeping for 1.77 seconds...
+2026-04-23 12:54:03,313 - [INFO] Posting comment: 'What a game so far! Let's see who breaks the deadlock.'
+2026-04-23 12:54:04,181 - [SUCCESS] [METRIC] Found in 0.86s | Fallbacks: 2 | Avg: 1.66s
+2026-04-23 12:54:07,118 - [TRACE] Sleeping for 0.82 seconds...
+2026-04-23 12:54:10,222 - [SUCCESS] [METRIC] Found in 0.23s | Fallbacks: 0 | Avg: 1.37s
+2026-04-23 12:54:12,222 - [SUCCESS] [METRIC] Found in 0.52s | Fallbacks: 5 | Avg: 1.23s
+2026-04-23 12:54:12,223 - [TRACE] Verifying post...
+2026-04-23 12:54:15,318 - [WARNING] Element not found, skipping. (//*[contains(@text, 'What a game so far! Let's see who breaks the deadlock.')])
+2026-04-23 12:54:15,444 - [SUCCESS] [METRIC] Found in 0.12s | Fallbacks: 0 | Avg: 1.07s
+2026-04-23 12:54:15,550 - [SUCCESS] Comment posted successfully (Input cleared)
+2026-04-23 12:54:15,550 - [SUCCESS] [user1] Comment sequence complete! Waiting 30s before tearing down session.
+2026-04-23 12:54:45,587 - [TRACE] [user1] Heartbeat sent to keep session alive during cooldown (30/30s)
+2026-04-23 12:54:45,587 - [INFO] [user1] Account cycle finished.
+2026-04-23 12:54:45,588 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:54:46,266 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:54:46,267 - [INFO] Resting for 30s before next account...
+2026-04-23 12:55:16,268 - [INFO] Running account: user1
+2026-04-23 12:55:16,268 - [INFO] [user1] Starting Appium session on device R3CMB0CDBPT...
+2026-04-23 12:55:20,860 - [INFO] [user1] Connected to device successfully.
+2026-04-23 12:55:20,861 - [TRACE] Sleeping for 10.45 seconds...
+2026-04-23 12:55:31,337 - [DEBUG] Ensuring we are on the home screen...
+2026-04-23 12:55:32,484 - [WARNING] Element not found, skipping. (//*[@text='Football' or @text='SOCCER'])
+2026-04-23 12:55:35,883 - [WARNING] Element not found, skipping. (//*[@text='Football' or @text='SOCCER'])
+2026-04-23 12:55:38,288 - [SUCCESS] [METRIC] Found in 0.89s | Fallbacks: 0 | Avg: 0.89s
+2026-04-23 12:55:38,289 - [DEBUG] Resetting sport menu to start...
+2026-04-23 12:55:43,811 - [INFO] Checking for eligible Football matches...
+2026-04-23 12:55:45,305 - [SUCCESS] [METRIC] Found in 1.40s | Fallbacks: 0 | Avg: 1.14s
+2026-04-23 12:55:45,306 - [INFO] Checking LIVE filter state...
+2026-04-23 12:55:45,956 - [SUCCESS] [METRIC] Found in 0.64s | Fallbacks: 0 | Avg: 0.98s
+2026-04-23 12:55:45,998 - [INFO] Activating LIVE filter...
+2026-04-23 12:55:48,530 - [TRACE] Sleeping for 2.86 seconds...
+2026-04-23 12:55:51,866 - [INFO] Found 7 potential matches in Football LIVE list.
+2026-04-23 12:55:51,914 - [SUCCESS] ENTERING PROFESSIONAL MATCH: 
+2026-04-23 12:55:53,879 - [TRACE] Sleeping for 3.07 seconds...
+2026-04-23 12:55:56,959 - [INFO] [user1] Navigating to discussion tab...
+2026-04-23 12:55:56,960 - [TRACE] Navigating to Discussion Tab...
+2026-04-23 12:56:00,296 - [SUCCESS] [METRIC] Found in 3.24s | Fallbacks: 2 | Avg: 1.54s
+2026-04-23 12:56:00,297 - [TRACE] Sleeping for 3.88 seconds...
+2026-04-23 12:56:04,180 - [TRACE] Simulating human behavior...
+2026-04-23 12:56:04,227 - [TRACE] Sleeping for 1.54 seconds...
+2026-04-23 12:56:05,772 - [INFO] [user1] Polling match state for an event...
+2026-04-23 12:56:05,773 - [INFO] [user1] Initial entry detected. Proceeding with first post...
+2026-04-23 12:56:05,773 - [INFO] [user1] Event detected. Preparing to comment...
+2026-04-23 12:56:05,774 - [TRACE] Simulating human behavior...
+2026-04-23 12:56:05,814 - [TRACE] Sleeping for 1.81 seconds...
+2026-04-23 12:56:07,627 - [INFO] Posting comment: 'Great defending on that last play.'
+2026-04-23 12:56:09,389 - [SUCCESS] [METRIC] Found in 1.76s | Fallbacks: 2 | Avg: 1.59s
+2026-04-23 12:56:11,665 - [TRACE] Sleeping for 0.75 seconds...
+2026-04-23 12:56:15,336 - [SUCCESS] [METRIC] Found in 0.32s | Fallbacks: 0 | Avg: 1.37s
+2026-04-23 12:56:18,373 - [SUCCESS] [METRIC] Found in 1.57s | Fallbacks: 5 | Avg: 1.40s
+2026-04-23 12:56:18,374 - [TRACE] Verifying post...
+2026-04-23 12:56:19,382 - [SUCCESS] [METRIC] Found in 1.00s | Fallbacks: 0 | Avg: 1.35s
+2026-04-23 12:56:19,383 - [SUCCESS] Comment posted successfully
+2026-04-23 12:56:19,383 - [SUCCESS] [user1] Comment sequence complete! Waiting 30s before tearing down session.
+2026-04-23 12:56:35,309 - [INFO] [user1] Closing session cleanly...
+2026-04-23 12:56:35,949 - [INFO] [user1] Session closed and device proxy reset.
+2026-04-23 12:56:35,949 - [INFO] Bot manually stopped by user.
+2026-04-23 12:56:35,950 - [INFO] Bot execution terminated.

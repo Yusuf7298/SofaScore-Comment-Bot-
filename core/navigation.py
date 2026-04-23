@@ -4,6 +4,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.helpers import logger, random_delay
 from utils.selectors import DISCUSSION_TAB_SELECTOR
+from appium.webdriver.common.appiumby import AppiumBy
+
 class Navigator:
     def __init__(self, driver):
         self.driver = driver
@@ -136,17 +138,31 @@ class Navigator:
         """Locates and enters a professional match based on sport and league exclusion criteria."""
         allowed_sports = filters.get("allowed_sports", [])
         exclude_keywords = [k.lower() for k in filters.get("exclude_keywords", [])]
-        
-        from utils.selectors import SPORT_CATEGORY_ICON, MATCH_LIST_ITEM
-        
-        self.driver.implicitly_wait(0)
         size = self.driver.get_window_size()
+        
+        # 0. RETURN TO HOME (Back out of any open matches)
+        logger.debug("Ensuring we are on the home screen...")
+        for _ in range(3):
+            # If we see the 'Football' tab, we are home
+            if self.safe_find([{"by": AppiumBy.XPATH, "value": "//*[@text='Football' or @text='SOCCER']"}], global_timeout=1.0):
+                break
+            self.driver.press_keycode(4) # Back key
+            time.sleep(1)
+
+        # 0.5 RESET MENU TO START (Swipe Left)
+        logger.debug("Resetting sport menu to start...")
+        for _ in range(3):
+            self.driver.swipe(size['width']*0.2, size['height']*0.15, size['width']*0.8, size['height']*0.15, 1000)
+            time.sleep(0.5)
+            
+        from utils.selectors import SPORT_CATEGORY_ICON, MATCH_LIST_ITEM
         
         for sport in allowed_sports:
             # Fallback for Football -> Soccer
             sport_names = [sport]
             if sport == "Football": sport_names.append("Soccer")
             
+            # 1. Attempt to find and click the sport icon
             success = False
             for name in sport_names:
                 logger.info(f"Checking for eligible {name} matches...")
@@ -154,27 +170,66 @@ class Navigator:
                 success = self.safe_click(sport_selector, global_timeout=2.0)
                 if success: break
             
-            # If not found, attempt dynamic swipes
+            # If not found, attempt bidirectional swipes (Right then Left)
             if not success:
-                for swipe_attempt in range(3):
-                    logger.info(f"{sport} not visible. Swiping category bar (Attempt {swipe_attempt+1})...")
-                    # Swipe the top 20% of the screen
-                    self.driver.swipe(size['width']*0.9, size['height']*0.15, size['width']*0.1, size['height']*0.15, 600)
-                    time.sleep(1)
-                    for name in sport_names:
-                        sport_selector = [{"by": s["by"], "value": s["value"].format(sport=name)} for s in SPORT_CATEGORY_ICON]
-                        success = self.safe_click(sport_selector, global_timeout=1.5)
+                for direction in ["right", "left"]:
+                    logger.debug(f"{sport} not visible. Swiping category bar {direction}...")
+                    for swipe_attempt in range(3):
+                        if direction == "right":
+                            self.driver.swipe(size['width']*0.8, size['height']*0.15, size['width']*0.2, size['height']*0.15, 1000)
+                        else:
+                            self.driver.swipe(size['width']*0.2, size['height']*0.15, size['width']*0.8, size['height']*0.15, 1000)
+                        
+                        for name in sport_names:
+                            sport_selector = [{"by": s["by"], "value": s["value"].format(sport=name)} for s in SPORT_CATEGORY_ICON]
+                            success = self.safe_click(sport_selector, global_timeout=1.0)
+                            if success: break
                         if success: break
                     if success: break
             
             if not success:
-                logger.warning(f"Could not locate {sport} category icon after swiping.")
                 continue
                 
-            random_delay(2, 4)
+            # 2. FORCE "LIVE" TAB SELECTION (Conditional)
+            logger.info("Checking LIVE filter state...")
+            live_selectors = [
+                {"by": AppiumBy.XPATH, "value": "//*[@text='Live' or @text='LIVE']"},
+                {"by": AppiumBy.ID, "value": "com.sofascore.results:id/live_filter_button"},
+                {"by": AppiumBy.ANDROID_UIAUTOMATOR, "value": 'new UiSelector().textContains("Live")'}
+            ]
+            live_btn = self.safe_find(live_selectors, global_timeout=3.0)
+            if live_btn:
+                # Only click if not already active (checked/selected)
+                is_active = live_btn.get_attribute("selected") == "true" or live_btn.get_attribute("checked") == "true"
+                if not is_active:
+                    logger.info("Activating LIVE filter...")
+                    live_btn.click()
+                else:
+                    logger.info("LIVE filter already active.")
             
-            matches = self.driver.find_elements(MATCH_LIST_ITEM[0]["by"], MATCH_LIST_ITEM[0]["value"])
-            logger.info(f"Found {len(matches)} total matches in {sport} list. Evaluating eligibility...")
+            # Refresh UI Cache
+            _ = self.driver.page_source
+            random_delay(2, 4)
+            self.driver.implicitly_wait(0)
+            
+            # 3. SCAN FOR MATCHES (Multi-Strategy)
+            # Strategy A: Find by Score Patterns (Colon, HT, or Minute Mark)
+            # This finds the TEXT and then drills UP to the clickable parent
+            matches = self.driver.find_elements(AppiumBy.XPATH, "//*[contains(@text, ':') or contains(@text, \"'\") or @text='HT']/ancestor::*[@clickable='true']")
+            
+            # Strategy B: Find by known IDs
+            if not matches:
+                matches = self.driver.find_elements(AppiumBy.XPATH, "//*[(contains(@resource-id, 'match') or contains(@resource-id, 'event')) and @clickable='true']")
+                
+            # Strategy C: Text-Heavy Clickable items (Any group with 3+ TextViews)
+            if not matches:
+                matches = self.driver.find_elements(AppiumBy.XPATH, "//*[@clickable='true' and count(.//android.widget.TextView) >= 3]")
+            
+            # Strategy D: Android UiAutomator deep sweep
+            if not matches:
+                matches = self.driver.find_elements(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().clickable(true).resourceIdMatches("(?i).*(match|event|cell|item).*")')
+
+            logger.info(f"Found {len(matches)} potential matches in {sport} LIVE list.")
             
             if not matches:
                 continue
